@@ -6,15 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CEC480F62DF0DCCD007F88A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F32DF0DCCD007F88A4 /* ContentView.swift */; };
+		CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */; };
+		CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */; };
+		CEC480FB2DF0DD2A007F88A4 /* MyGardenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CEC480D62DF0DCC5007F88A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEC480C02DF0DCC2007F88A4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEC480C72DF0DCC2007F88A4;
-			remoteInfo = MyGardenApp;
-		};
-		CEC480E02DF0DCC5007F88A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEC480C02DF0DCC2007F88A4 /* Project object */;
 			proxyType = 1;
@@ -26,26 +26,11 @@
 /* Begin PBXFileReference section */
 		CEC480C82DF0DCC2007F88A4 /* MyGardenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGardenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC480D52DF0DCC5007F88A4 /* MyGardenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGardenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC480DF2DF0DCC5007F88A4 /* MyGardenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGardenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEC480F32DF0DCCD007F88A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenAppApp.swift; sourceTree = "<group>"; };
+		CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CEC480CA2DF0DCC2007F88A4 /* MyGardenApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyGardenApp;
-			sourceTree = "<group>";
-		};
-		CEC480D82DF0DCC5007F88A4 /* MyGardenAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyGardenAppTests;
-			sourceTree = "<group>";
-		};
-		CEC480E22DF0DCC5007F88A4 /* MyGardenAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyGardenAppUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEC480C52DF0DCC2007F88A4 /* Frameworks */ = {
@@ -62,22 +47,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEC480DC2DF0DCC5007F88A4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CEC480BF2DF0DCC2007F88A4 = {
 			isa = PBXGroup;
 			children = (
-				CEC480CA2DF0DCC2007F88A4 /* MyGardenApp */,
-				CEC480D82DF0DCC5007F88A4 /* MyGardenAppTests */,
-				CEC480E22DF0DCC5007F88A4 /* MyGardenAppUITests */,
+				CEC480F52DF0DCCD007F88A4 /* MyGardenApp */,
+				CEC480FA2DF0DD29007F88A4 /* MyGardenAppTests */,
 				CEC480C92DF0DCC2007F88A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,9 +64,26 @@
 			children = (
 				CEC480C82DF0DCC2007F88A4 /* MyGardenApp.app */,
 				CEC480D52DF0DCC5007F88A4 /* MyGardenAppTests.xctest */,
-				CEC480DF2DF0DCC5007F88A4 /* MyGardenAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC480F52DF0DCCD007F88A4 /* MyGardenApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */,
+				CEC480F32DF0DCCD007F88A4 /* ContentView.swift */,
+				CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */,
+			);
+			path = MyGardenApp;
+			sourceTree = "<group>";
+		};
+		CEC480FA2DF0DD29007F88A4 /* MyGardenAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */,
+			);
+			path = MyGardenAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +100,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CEC480CA2DF0DCC2007F88A4 /* MyGardenApp */,
 			);
 			name = MyGardenApp;
 			packageProductDependencies = (
@@ -130,38 +121,12 @@
 			dependencies = (
 				CEC480D72DF0DCC5007F88A4 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				CEC480D82DF0DCC5007F88A4 /* MyGardenAppTests */,
-			);
 			name = MyGardenAppTests;
 			packageProductDependencies = (
 			);
 			productName = MyGardenAppTests;
 			productReference = CEC480D52DF0DCC5007F88A4 /* MyGardenAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CEC480DE2DF0DCC5007F88A4 /* MyGardenAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEC480EF2DF0DCC5007F88A4 /* Build configuration list for PBXNativeTarget "MyGardenAppUITests" */;
-			buildPhases = (
-				CEC480DB2DF0DCC5007F88A4 /* Sources */,
-				CEC480DC2DF0DCC5007F88A4 /* Frameworks */,
-				CEC480DD2DF0DCC5007F88A4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CEC480E12DF0DCC5007F88A4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CEC480E22DF0DCC5007F88A4 /* MyGardenAppUITests */,
-			);
-			name = MyGardenAppUITests;
-			packageProductDependencies = (
-			);
-			productName = MyGardenAppUITests;
-			productReference = CEC480DF2DF0DCC5007F88A4 /* MyGardenAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -177,10 +142,6 @@
 						CreatedOnToolsVersion = 16.3;
 					};
 					CEC480D42DF0DCC5007F88A4 = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = CEC480C72DF0DCC2007F88A4;
-					};
-					CEC480DE2DF0DCC5007F88A4 = {
 						CreatedOnToolsVersion = 16.3;
 						TestTargetID = CEC480C72DF0DCC2007F88A4;
 					};
@@ -202,7 +163,6 @@
 			targets = (
 				CEC480C72DF0DCC2007F88A4 /* MyGardenApp */,
 				CEC480D42DF0DCC5007F88A4 /* MyGardenAppTests */,
-				CEC480DE2DF0DCC5007F88A4 /* MyGardenAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,17 +172,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CEC480D32DF0DCC5007F88A4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEC480DD2DF0DCC5007F88A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,6 +190,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC480F62DF0DCCD007F88A4 /* ContentView.swift in Sources */,
+				CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,13 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEC480DB2DF0DCC5007F88A4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CEC480FB2DF0DD2A007F88A4 /* MyGardenAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,11 +210,6 @@
 			isa = PBXTargetDependency;
 			target = CEC480C72DF0DCC2007F88A4 /* MyGardenApp */;
 			targetProxy = CEC480D62DF0DCC5007F88A4 /* PBXContainerItemProxy */;
-		};
-		CEC480E12DF0DCC5007F88A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEC480C72DF0DCC2007F88A4 /* MyGardenApp */;
-			targetProxy = CEC480E02DF0DCC5007F88A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -403,8 +348,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,9 +358,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pavel.MyGardenApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,8 +381,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,9 +391,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pavel.MyGardenApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -484,40 +439,6 @@
 			};
 			name = Release;
 		};
-		CEC480F02DF0DCC5007F88A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q5L7D25SC3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pavel.MyGardenAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MyGardenApp;
-			};
-			name = Debug;
-		};
-		CEC480F12DF0DCC5007F88A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q5L7D25SC3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pavel.MyGardenAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MyGardenApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,15 +465,6 @@
 			buildConfigurations = (
 				CEC480ED2DF0DCC5007F88A4 /* Debug */,
 				CEC480EE2DF0DCC5007F88A4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEC480EF2DF0DCC5007F88A4 /* Build configuration list for PBXNativeTarget "MyGardenAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEC480F02DF0DCC5007F88A4 /* Debug */,
-				CEC480F12DF0DCC5007F88A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
