@@ -17,13 +17,16 @@
 		CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F662DF1B0780021D1E5 /* LaunchView.swift */; };
 		CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */; };
 		CEBA3F6E2DF1BCB20021D1E5 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F6D2DF1BCB20021D1E5 /* PaywallView.swift */; };
-		CEBA3F732DF1C0F50021D1E5 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F722DF1C0F50021D1E5 /* MainTabView.swift */; };
+		CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F722DF1C0F50021D1E5 /* MainTabBarView.swift */; };
 		CEBA3F762DF1C95D0021D1E5 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F752DF1C95D0021D1E5 /* BackgroundColor.swift */; };
 		CEBA3F792DF1CCBE0021D1E5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F782DF1CCBE0021D1E5 /* MainViewModel.swift */; };
 		CEBA3F7C2DF1CE020021D1E5 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F7B2DF1CE020021D1E5 /* TabModel.swift */; };
 		CEBA3F822DF1CF3F0021D1E5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F812DF1CF3F0021D1E5 /* SettingsView.swift */; };
 		CEBA3F842DF1CF4E0021D1E5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F832DF1CF4E0021D1E5 /* CameraView.swift */; };
 		CEBA3F862DF1CF630021D1E5 /* MyGardenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F852DF1CF630021D1E5 /* MyGardenView.swift */; };
+		CEBA3F892DF1DC010021D1E5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F882DF1DC010021D1E5 /* Logger.swift */; };
+		CEBA3F8D2DF1DEC70021D1E5 /* PlantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F8C2DF1DEC70021D1E5 /* PlantsView.swift */; };
+		CEBA3F8F2DF1DED60021D1E5 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F8E2DF1DED60021D1E5 /* HistoryView.swift */; };
 		CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */; };
 		CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */; };
 		CEC480FB2DF0DD2A007F88A4 /* MyGardenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */; };
@@ -49,13 +52,16 @@
 		CEBA3F662DF1B0780021D1E5 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		CEBA3F6D2DF1BCB20021D1E5 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
-		CEBA3F722DF1C0F50021D1E5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		CEBA3F722DF1C0F50021D1E5 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		CEBA3F752DF1C95D0021D1E5 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
 		CEBA3F782DF1CCBE0021D1E5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CEBA3F7B2DF1CE020021D1E5 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		CEBA3F812DF1CF3F0021D1E5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CEBA3F832DF1CF4E0021D1E5 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		CEBA3F852DF1CF630021D1E5 /* MyGardenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenView.swift; sourceTree = "<group>"; };
+		CEBA3F882DF1DC010021D1E5 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CEBA3F8C2DF1DEC70021D1E5 /* PlantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsView.swift; sourceTree = "<group>"; };
+		CEBA3F8E2DF1DED60021D1E5 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		CEC480C82DF0DCC2007F88A4 /* MyGardenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGardenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC480D52DF0DCC5007F88A4 /* MyGardenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGardenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -222,7 +228,7 @@
 		CEBA3F712DF1C0E00021D1E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA3F722DF1C0F50021D1E5 /* MainTabView.swift */,
+				CEBA3F722DF1C0F50021D1E5 /* MainTabBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,7 +260,9 @@
 		CEBA3F7D2DF1CE4E0021D1E5 /* MyGarden */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA3F852DF1CF630021D1E5 /* MyGardenView.swift */,
+				CEBA3F902DF1DF0D0021D1E5 /* MyGarden */,
+				CEBA3F8A2DF1DEA10021D1E5 /* Plants */,
+				CEBA3F8B2DF1DEAA0021D1E5 /* History */,
 			);
 			path = MyGarden;
 			sourceTree = "<group>";
@@ -285,6 +293,38 @@
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
+		CEBA3F872DF1DBEA0021D1E5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F882DF1DC010021D1E5 /* Logger.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CEBA3F8A2DF1DEA10021D1E5 /* Plants */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F8C2DF1DEC70021D1E5 /* PlantsView.swift */,
+			);
+			path = Plants;
+			sourceTree = "<group>";
+		};
+		CEBA3F8B2DF1DEAA0021D1E5 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F8E2DF1DED60021D1E5 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		CEBA3F902DF1DF0D0021D1E5 /* MyGarden */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F852DF1CF630021D1E5 /* MyGardenView.swift */,
+			);
+			path = MyGarden;
+			sourceTree = "<group>";
+		};
 		CEC480BF2DF0DCC2007F88A4 = {
 			isa = PBXGroup;
 			children = (
@@ -306,11 +346,12 @@
 		CEC480F52DF0DCCD007F88A4 /* MyGardenApp */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA3F502DF1A6CD0021D1E5 /* Model */,
-				CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */,
 				CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */,
+				CEBA3F872DF1DBEA0021D1E5 /* Helper */,
+				CEBA3F502DF1A6CD0021D1E5 /* Model */,
 				CEBA3F4F2DF1A6B30021D1E5 /* Screen */,
 				CEBA3F632DF1AB4D0021D1E5 /* Launch Screen.storyboard */,
+				CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */,
 			);
 			path = MyGardenApp;
 			sourceTree = "<group>";
@@ -436,11 +477,13 @@
 			files = (
 				CEBA3F562DF1A77C0021D1E5 /* RootView.swift in Sources */,
 				CEBA3F842DF1CF4E0021D1E5 /* CameraView.swift in Sources */,
-				CEBA3F732DF1C0F50021D1E5 /* MainTabView.swift in Sources */,
+				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
 				CEBA3F6E2DF1BCB20021D1E5 /* PaywallView.swift in Sources */,
 				CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */,
 				CEBA3F592DF1A7B10021D1E5 /* StartScreen.swift in Sources */,
 				CEBA3F522DF1A6F10021D1E5 /* AppRouterModel.swift in Sources */,
+				CEBA3F8F2DF1DED60021D1E5 /* HistoryView.swift in Sources */,
+				CEBA3F892DF1DC010021D1E5 /* Logger.swift in Sources */,
 				CEBA3F5C2DF1A7EE0021D1E5 /* RootViewModel.swift in Sources */,
 				CEBA3F762DF1C95D0021D1E5 /* BackgroundColor.swift in Sources */,
 				CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */,
@@ -449,6 +492,7 @@
 				CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */,
 				CEBA3F792DF1CCBE0021D1E5 /* MainViewModel.swift in Sources */,
 				CEBA3F822DF1CF3F0021D1E5 /* SettingsView.swift in Sources */,
+				CEBA3F8D2DF1DEC70021D1E5 /* PlantsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

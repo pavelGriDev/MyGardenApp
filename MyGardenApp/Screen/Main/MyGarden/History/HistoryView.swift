@@ -1,5 +1,5 @@
 //
-//  SettingsView.swift
+//  HistoryView.swift
 //  MyGardenApp
 //
 //  Created by Pavel Gritskov on 05.06.25.
@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-struct SettingsView: View {
+struct HistoryView: View {
     var body: some View {
-        Text("Settings")
+        Text("History")
+            .backgroundColor()
+        
     }
 }
 
 #Preview {
-    SettingsView()
+    HistoryView()
 }

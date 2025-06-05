@@ -22,7 +22,7 @@ struct RootView: View {
                 case .onboarding:
                     OnboardingView()
                 case .main:
-                    MainTabView()
+                    MainTabBarView()
                 }
             }
         }
