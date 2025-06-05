@@ -8,5 +8,12 @@
 import Foundation
 
 final class RootViewModel: ObservableObject {
-    private(set) var currentScreen: StartScreen = .launch
+    @Published private(set) var currentScreen: StartScreen = .launch
+    
+    func timeDelay() async {
+        try? await Task.sleep(nanoseconds: 2_000_000_000)
+        await MainActor.run {
+            currentScreen = .main
+        }
+    }
 }

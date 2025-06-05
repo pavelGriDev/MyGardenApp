@@ -18,13 +18,16 @@ struct RootView: View {
             Group {
                 switch vm.currentScreen {
                 case .launch:
-                    Text("launch")
+                    LaunchView()
                 case .onboarding:
                     Text("onboarding")
                 case .main:
                     Text("main")
                 }
             }
+        }
+        .task {
+            await vm.timeDelay()
         }
     }
 }
