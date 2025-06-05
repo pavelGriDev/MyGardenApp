@@ -20,12 +20,15 @@ struct RootView: View {
                 case .launch:
                     LaunchView()
                 case .onboarding:
-                    Text("onboarding")
+                    OnboardingView()
                 case .main:
-                    Text("main")
+                    MainView()
                 }
             }
         }
+        .fullScreenCover(isPresented: $vm.showPaywallScreen, content: {
+            PaywallView()
+        })
         .task {
             await vm.timeDelay()
         }

@@ -15,6 +15,9 @@
 		CEBA3F622DF1A88A0021D1E5 /* RootViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F612DF1A88A0021D1E5 /* RootViewModelTest.swift */; };
 		CEBA3F642DF1AB4D0021D1E5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBA3F632DF1AB4D0021D1E5 /* Launch Screen.storyboard */; };
 		CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F662DF1B0780021D1E5 /* LaunchView.swift */; };
+		CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */; };
+		CEBA3F6E2DF1BCB20021D1E5 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F6D2DF1BCB20021D1E5 /* PaywallView.swift */; };
+		CEBA3F732DF1C0F50021D1E5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F722DF1C0F50021D1E5 /* MainView.swift */; };
 		CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */; };
 		CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */; };
 		CEC480FB2DF0DD2A007F88A4 /* MyGardenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */; };
@@ -38,6 +41,9 @@
 		CEBA3F612DF1A88A0021D1E5 /* RootViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelTest.swift; sourceTree = "<group>"; };
 		CEBA3F632DF1AB4D0021D1E5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CEBA3F662DF1B0780021D1E5 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CEBA3F6D2DF1BCB20021D1E5 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		CEBA3F722DF1C0F50021D1E5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CEC480C82DF0DCC2007F88A4 /* MyGardenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGardenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC480D52DF0DCC5007F88A4 /* MyGardenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGardenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,8 +73,11 @@
 		CEBA3F4F2DF1A6B30021D1E5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA3F652DF1B03F0021D1E5 /* Launch */,
 				CEBA3F532DF1A7610021D1E5 /* Root */,
+				CEBA3F702DF1C0D40021D1E5 /* Main */,
+				CEBA3F652DF1B03F0021D1E5 /* Launch */,
+				CEBA3F6C2DF1BCA00021D1E5 /* Paywall */,
+				CEBA3F682DF1BC2C0021D1E5 /* Onboarding */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -152,6 +161,54 @@
 				CEBA3F662DF1B0780021D1E5 /* LaunchView.swift */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		CEBA3F682DF1BC2C0021D1E5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F692DF1BC350021D1E5 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CEBA3F692DF1BC350021D1E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEBA3F6C2DF1BCA00021D1E5 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F6F2DF1BCC80021D1E5 /* View */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		CEBA3F6F2DF1BCC80021D1E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F6D2DF1BCB20021D1E5 /* PaywallView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEBA3F702DF1C0D40021D1E5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F712DF1C0E00021D1E5 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CEBA3F712DF1C0E00021D1E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F722DF1C0F50021D1E5 /* MainView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CEC480BF2DF0DCC2007F88A4 = {
@@ -304,11 +361,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBA3F562DF1A77C0021D1E5 /* RootView.swift in Sources */,
+				CEBA3F732DF1C0F50021D1E5 /* MainView.swift in Sources */,
+				CEBA3F6E2DF1BCB20021D1E5 /* PaywallView.swift in Sources */,
 				CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */,
 				CEBA3F592DF1A7B10021D1E5 /* StartScreen.swift in Sources */,
 				CEBA3F522DF1A6F10021D1E5 /* AppRouterModel.swift in Sources */,
 				CEBA3F5C2DF1A7EE0021D1E5 /* RootViewModel.swift in Sources */,
 				CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */,
+				CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
