@@ -18,6 +18,7 @@ struct PaywallView: View {
             }
             .buttonStyle(.borderedProminent)
         }
+        .backgroundColor()
     }
 }
 
