@@ -12,18 +12,26 @@ final  class OnboardingViewModel: ObservableObject {
     private(set) var content: [OnboardingPageModel] = OnboardingPageModel.getAll()
     
     private var finishOnboarding: () -> Void
+    
+    /// Dependencies
+    private let purchaseService: PurchaseService
      
-    init(_ finishOnboarding: @escaping () -> Void) {
+    init(
+        _ finishOnboarding: @escaping () -> Void,
+        _ purchaseService: PurchaseService = MockPurchaseServiceImp.shared
+    ) {
         self.finishOnboarding = finishOnboarding
+        self.purchaseService = purchaseService
     }
     
-    func continueButtonPressed() {
-        print(#function)
-        
-        if currentIndex + 1 < content.count {
+    func continueButtonPressed(_ completion: () -> Void) {
+        switch (currentIndex + 1 < content.count, purchaseService.purchase == nil) {
+        case (true, _):
             currentIndex += 1
-        } else {
+        case (false, true):
             finishOnboarding()
+        case (false, false):
+            completion()
         }
     }
     

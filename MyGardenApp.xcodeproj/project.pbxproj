@@ -41,6 +41,8 @@
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
 		CEDC6BBE2DF35F0600770BBA /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBD2DF35F0600770BBA /* PurchaseService.swift */; };
 		CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBF2DF3634900770BBA /* MockPurchaseModel.swift */; };
+		CEDC6BC42DF3698000770BBA /* OnboardingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC32DF3698000770BBA /* OnboardingViewModelTest.swift */; };
+		CEDC6BC62DF378DE00770BBA /* MockPurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		CEDC6BBD2DF35F0600770BBA /* PurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
 		CEDC6BBF2DF3634900770BBA /* MockPurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPurchaseModel.swift; sourceTree = "<group>"; };
+		CEDC6BC32DF3698000770BBA /* OnboardingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTest.swift; sourceTree = "<group>"; };
+		CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPurchaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				CEBA3F5E2DF1A8540021D1E5 /* Root */,
+				CEDC6BC12DF3693D00770BBA /* Onboarding */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 		CEBA3F5F2DF1A85F0021D1E5 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -465,6 +471,22 @@
 			path = PurchaseService;
 			sourceTree = "<group>";
 		};
+		CEDC6BC12DF3693D00770BBA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6BC22DF3694C00770BBA /* ViewModel */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CEDC6BC22DF3694C00770BBA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6BC32DF3698000770BBA /* OnboardingViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -610,7 +632,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDC6BC42DF3698000770BBA /* OnboardingViewModelTest.swift in Sources */,
 				CEBA3F622DF1A88A0021D1E5 /* RootViewModelTest.swift in Sources */,
+				CEDC6BC62DF378DE00770BBA /* MockPurchaseService.swift in Sources */,
 				CEC480FB2DF0DD2A007F88A4 /* MyGardenAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

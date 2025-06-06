@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import NavigationBackport
 
 struct OnboardingPageView: View {
+    @EnvironmentObject var navigator: PathNavigator
     
     let model: OnboardingPageModel
     @ObservedObject var vm: OnboardingViewModel
@@ -40,7 +42,9 @@ struct OnboardingPageView: View {
                     
                     Button {
                         withAnimation {
-                            vm.continueButtonPressed()
+                            vm.continueButtonPressed() {
+                                navigator.push(AppRouterModel.paywall)
+                            }
                         }
                     } label: {
                         Capsule()

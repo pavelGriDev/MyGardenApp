@@ -10,6 +10,7 @@ import Foundation
 protocol PurchaseService {
     var hasPremium: Bool { get }
     var purchase: MockPurchaseModel? { get }
+    func checkStatus() async
     func getPaywalls() async
     func makePurchase(_ product: MockPurchaseModel.ProductModel) async
     func restore() async
@@ -47,6 +48,6 @@ final class MockPurchaseServiceImp: PurchaseService {
     }
     
     private func delay() async {
-        try? await Task.sleep(nanoseconds: 2_000_000_000)
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
     }
 }
