@@ -27,6 +27,19 @@ struct OnboardingViewModelTest {
         #expect(sut.currentIndex == 1)
     }
     
+    @Test func continueButtonPressed_ifShowProgress_buttonInactive() async throws {
+        let closure: () -> Void = {}
+        var callCompletion: Bool = false
+        let completion: () -> Void = { callCompletion = true }
+        let sut = OnboardingViewModel(closure)
+        
+        sut.showProgress = true
+        sut.continueButtonPressed(completion)
+        sut.continueButtonPressed(completion)
+        
+        #expect(!callCompletion)
+    }
+    
     @Test func continueButtonPressed_productIsNil_finishOnboarding() async throws {
         var value = 0
         var finishOnboarding: Bool = false

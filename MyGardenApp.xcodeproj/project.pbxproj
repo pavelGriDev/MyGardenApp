@@ -45,6 +45,8 @@
 		CEDC6BC62DF378DE00770BBA /* MockPurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */; };
 		CEDC6BC82DF37AA800770BBA /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC72DF37AA800770BBA /* ProgressButton.swift */; };
 		CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */; };
+		CEDC6BCC2DF39E5900770BBA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BCB2DF39E5900770BBA /* AppError.swift */; };
+		CEDC6BCE2DF39FA500770BBA /* View+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BCD2DF39FA500770BBA /* View+ErrorAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPurchaseService.swift; sourceTree = "<group>"; };
 		CEDC6BC72DF37AA800770BBA /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
 		CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractionService.swift; sourceTree = "<group>"; };
+		CEDC6BCB2DF39E5900770BBA /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		CEDC6BCD2DF39FA500770BBA /* View+ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ErrorAlert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			children = (
 				CE416A632DF221B8001364C5 /* View+ext.swift */,
 				CE416A6C2DF230BF001364C5 /* Font+ext.swift */,
+				CEDC6BCD2DF39FA500770BBA /* View+ErrorAlert.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				CEBA3F512DF1A6F10021D1E5 /* AppRouterModel.swift */,
+				CEDC6BCB2DF39E5900770BBA /* AppError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -604,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDC6BCC2DF39E5900770BBA /* AppError.swift in Sources */,
 				CEBA3F562DF1A77C0021D1E5 /* RootView.swift in Sources */,
 				CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */,
 				CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */,
@@ -626,6 +633,7 @@
 				CE416A642DF221B8001364C5 /* View+ext.swift in Sources */,
 				CEBA3F7C2DF1CE020021D1E5 /* TabModel.swift in Sources */,
 				CEBA3F862DF1CF630021D1E5 /* MyGardenView.swift in Sources */,
+				CEDC6BCE2DF39FA500770BBA /* View+ErrorAlert.swift in Sources */,
 				CE416A6D2DF230BF001364C5 /* Font+ext.swift in Sources */,
 				CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */,
 				CEBA3F792DF1CCBE0021D1E5 /* MainViewModel.swift in Sources */,
