@@ -44,6 +44,7 @@
 		CEDC6BC42DF3698000770BBA /* OnboardingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC32DF3698000770BBA /* OnboardingViewModelTest.swift */; };
 		CEDC6BC62DF378DE00770BBA /* MockPurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */; };
 		CEDC6BC82DF37AA800770BBA /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC72DF37AA800770BBA /* ProgressButton.swift */; };
+		CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		CEDC6BC32DF3698000770BBA /* OnboardingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTest.swift; sourceTree = "<group>"; };
 		CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPurchaseService.swift; sourceTree = "<group>"; };
 		CEDC6BC72DF37AA800770BBA /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
+		CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,6 +463,7 @@
 			children = (
 				CEDC6BBC2DF35EC900770BBA /* PurchaseService */,
 				CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */,
+				CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -602,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBA3F562DF1A77C0021D1E5 /* RootView.swift in Sources */,
+				CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */,
 				CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */,
 				CEBA3F842DF1CF4E0021D1E5 /* CameraView.swift in Sources */,
 				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
