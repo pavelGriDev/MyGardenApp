@@ -15,7 +15,8 @@ final  class OnboardingViewModel: ObservableObject {
     
     private var finishOnboarding: () -> Void
     private var task: Task<(), Never>?
-    
+    private var didRequestAppRating = false
+
     /// Dependencies
     private let purchaseService: PurchaseService
     private let appInteractionService: AppInteractionService
@@ -44,6 +45,13 @@ final  class OnboardingViewModel: ObservableObject {
         case (false, false):
             completion()
         }
+        shouldRequestReview()
+    }
+    
+    private func shouldRequestReview() {
+        guard self.currentIndex == content.count - 1 && !didRequestAppRating else { return }
+        appInteractionService.requestAppReview()
+        didRequestAppRating = true
     }
     
     func termsButtonPressed(_ completion: (URL) -> Void) {
