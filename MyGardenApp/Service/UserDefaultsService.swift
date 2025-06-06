@@ -1,5 +1,5 @@
 //
-//  UserDefaultsService.swift
+//  UserDefaultsServiceImp.swift
 //  MyGardenApp
 //
 //  Created by Pavel Gritskov on 06.06.25.
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol UserDefaultsProtocol {
-    func setFlag(_ key: UserDefaultsService.Key, value: Bool)
-    func getFlag(_ key: UserDefaultsService.Key) -> Bool
+protocol UserDefaultsService {
+    func setFlag(_ key: UserDefaultsServiceImp.Key, value: Bool)
+    func getFlag(_ key: UserDefaultsServiceImp.Key) -> Bool
 }
 
-final class UserDefaultsService: UserDefaultsProtocol {
+final class UserDefaultsServiceImp: UserDefaultsService {
     private let defaults = UserDefaults.standard
     
     enum Key: String {

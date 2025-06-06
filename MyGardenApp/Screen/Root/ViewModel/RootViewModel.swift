@@ -11,18 +11,16 @@ final class RootViewModel: ObservableObject {
     @Published private(set) var currentScreen: StartScreen = .launch
     @Published var showPaywallScreen = false
     
-    private let userDefaultService: UserDefaultsProtocol
+    private let userDefaultService: UserDefaultsService
     
     init(
-        _ userDefaultService: UserDefaultsProtocol = UserDefaultsService()
+        _ userDefaultService: UserDefaultsService = UserDefaultsServiceImp()
     ) {
         self.userDefaultService = userDefaultService
     }
     
     func finisOnboarding() {
-        print(#function)
         currentScreen = .main
-        print("Save state")
     }
     
     func setup() async {
@@ -35,9 +33,9 @@ final class RootViewModel: ObservableObject {
         }
     }
     
-    func showPaywallTest() {
-        showPaywallScreen = true
-    }
+//    func showPaywallTest() {
+//        showPaywallScreen = true
+//    }
     
     private func loadOnboardingStatus() -> Bool {
         userDefaultService.getFlag(.onboardingCompleted)
