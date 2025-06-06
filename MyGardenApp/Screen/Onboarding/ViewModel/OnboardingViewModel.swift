@@ -10,6 +10,7 @@ import Foundation
 final  class OnboardingViewModel: ObservableObject {
     @Published var currentIndex = 0
     private(set) var content: [OnboardingPageModel] = OnboardingPageModel.getAll()
+    @Published var showProgress = false
     
     private var finishOnboarding: () -> Void
     
@@ -35,7 +36,7 @@ final  class OnboardingViewModel: ObservableObject {
         }
     }
     
-    func termsButtonPressed() {
+    func termsButtonPressed(_ completion: (URL) -> Void) {
         print(#function)
     }
     
@@ -43,7 +44,7 @@ final  class OnboardingViewModel: ObservableObject {
         print(#function)
     }
     
-    func privacyButtonPressed() {
+    func privacyButtonPressed(_ completion: (URL) -> Void) {
         print(#function)
     }
 }

@@ -10,6 +10,7 @@ import NavigationBackport
 
 struct OnboardingPageView: View {
     @EnvironmentObject var navigator: PathNavigator
+    @Environment(\.openURL) var openUrl
     
     let model: OnboardingPageModel
     @ObservedObject var vm: OnboardingViewModel
@@ -40,33 +41,40 @@ struct OnboardingPageView: View {
                         .multilineTextAlignment(.center)
                         .minimumScaleFactor(0.9)
                     
-                    Button {
-                        withAnimation {
-                            vm.continueButtonPressed() {
-                                navigator.push(AppRouterModel.paywall)
+                    ProgressButton(
+                        title: model.buttonTitle,
+                        showProgress: $vm.showProgress,
+                        action: {
+                            withAnimation {
+                                vm.continueButtonPressed() {
+                                    navigator.push(AppRouterModel.paywall)
+                                }
                             }
                         }
-                    } label: {
-                        Capsule()
-                            .fill(Color.appPrimary)
-                            .frame(height: 48)
-                            .overlay {
-                                Text(model.buttonTitle)
-                                    .font(.customFont(.semiBold, size: 16))
-                                    .foregroundStyle(Color.textPrimaryLight)
-                                    .lineLimit(1)
-                            }
-                    }
+                    )
                     .padding(.top, 4)
                     
                     ActionFooterView(
-                        termsAction: vm.termsButtonPressed,
+                        termsAction: termsAction,
                         restoreAction: vm.restoreButtonPressed,
-                        privacyAction: vm.privacyButtonPressed
+                        privacyAction: privacyAction
                     )
                 }
                 .padding(.horizontal, 16.0)
             }
         }
     }
+    
+    private func termsAction() {
+        vm.termsButtonPressed { url in
+            openUrl(url)
+        }
+    }
+    
+    private func privacyAction() {
+        vm.termsButtonPressed { url in
+            openUrl(url)
+        }
+    }
 }
+
