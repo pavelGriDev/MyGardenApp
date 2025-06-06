@@ -9,7 +9,11 @@ import SwiftUI
 
 struct OnboardingView: View {
 
-    @StateObject private var vm = OnboardingViewModel()
+    @StateObject private var vm: OnboardingViewModel
+    
+    init(_ finishOnboarding: @escaping () -> Void) {
+        _vm = StateObject(wrappedValue: OnboardingViewModel(finishOnboarding))
+    }
     
     var body: some View {
         TabView(selection: $vm.currentIndex) {
@@ -25,5 +29,5 @@ struct OnboardingView: View {
 }
 
 #Preview {
-    OnboardingView()
+    OnboardingView( {} )
 }
