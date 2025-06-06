@@ -20,7 +20,7 @@ struct RootView: View {
                 case .launch:
                     LaunchView()
                 case .onboarding:
-                    OnboardingView()
+                    OnboardingView(vm.finisOnboarding)
                 case .main:
                     MainTabBarView()
                 }
@@ -30,7 +30,7 @@ struct RootView: View {
             PaywallView()
         })
         .task {
-            await vm.timeDelay()
+            await vm.setup()
         }
     }
 }

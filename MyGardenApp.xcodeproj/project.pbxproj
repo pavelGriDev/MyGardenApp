@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE416A642DF221B8001364C5 /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE416A632DF221B8001364C5 /* View+ext.swift */; };
+		CE416A672DF224BE001364C5 /* OnboardingPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE416A662DF224BE001364C5 /* OnboardingPageModel.swift */; };
+		CE416A6A2DF22C2B001364C5 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE416A692DF22C2B001364C5 /* OnboardingViewModel.swift */; };
+		CE416A6D2DF230BF001364C5 /* Font+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE416A6C2DF230BF001364C5 /* Font+ext.swift */; };
+		CE416A702DF2313E001364C5 /* Onest-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE416A6F2DF2313E001364C5 /* Onest-SemiBold.ttf */; };
+		CE416A722DF2314B001364C5 /* Onest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE416A712DF2314B001364C5 /* Onest-Regular.ttf */; };
 		CEBA3F4E2DF1A6350021D1E5 /* NavigationBackport in Frameworks */ = {isa = PBXBuildFile; productRef = CEBA3F4D2DF1A6350021D1E5 /* NavigationBackport */; };
 		CEBA3F522DF1A6F10021D1E5 /* AppRouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F512DF1A6F10021D1E5 /* AppRouterModel.swift */; };
 		CEBA3F562DF1A77C0021D1E5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F552DF1A77C0021D1E5 /* RootView.swift */; };
@@ -30,6 +36,9 @@
 		CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */; };
 		CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */; };
 		CEC480FB2DF0DD2A007F88A4 /* MyGardenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */; };
+		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
+		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
+		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE416A632DF221B8001364C5 /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
+		CE416A662DF224BE001364C5 /* OnboardingPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageModel.swift; sourceTree = "<group>"; };
+		CE416A692DF22C2B001364C5 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		CE416A6B2DF23047001364C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE416A6C2DF230BF001364C5 /* Font+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+ext.swift"; sourceTree = "<group>"; };
+		CE416A6F2DF2313E001364C5 /* Onest-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Onest-SemiBold.ttf"; sourceTree = "<group>"; };
+		CE416A712DF2314B001364C5 /* Onest-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Onest-Regular.ttf"; sourceTree = "<group>"; };
 		CEBA3F512DF1A6F10021D1E5 /* AppRouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterModel.swift; sourceTree = "<group>"; };
 		CEBA3F552DF1A77C0021D1E5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CEBA3F582DF1A7B10021D1E5 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
@@ -67,6 +83,9 @@
 		CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenAppApp.swift; sourceTree = "<group>"; };
 		CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenAppTests.swift; sourceTree = "<group>"; };
+		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
+		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +107,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE416A612DF21DAE001364C5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE416A622DF22198001364C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE416A632DF221B8001364C5 /* View+ext.swift */,
+				CE416A6C2DF230BF001364C5 /* Font+ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE416A652DF224A4001364C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE416A662DF224BE001364C5 /* OnboardingPageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE416A682DF22C13001364C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE416A692DF22C2B001364C5 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE416A6E2DF23128001364C5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CE416A6F2DF2313E001364C5 /* Onest-SemiBold.ttf */,
+				CE416A712DF2314B001364C5 /* Onest-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		CEBA3F4F2DF1A6B30021D1E5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				CE416A612DF21DAE001364C5 /* Common */,
 				CEBA3F742DF1C8C20021D1E5 /* Modifier */,
 				CEBA3F532DF1A7610021D1E5 /* Root */,
 				CEBA3F702DF1C0D40021D1E5 /* Main */,
@@ -185,6 +247,8 @@
 		CEBA3F682DF1BC2C0021D1E5 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				CE416A682DF22C13001364C5 /* ViewModel */,
+				CE416A652DF224A4001364C5 /* Model */,
 				CEBA3F692DF1BC350021D1E5 /* View */,
 			);
 			path = Onboarding;
@@ -193,6 +257,7 @@
 		CEBA3F692DF1BC350021D1E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC6BB62DF3236900770BBA /* Components */,
 				CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */,
 			);
 			path = View;
@@ -347,10 +412,14 @@
 			isa = PBXGroup;
 			children = (
 				CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */,
+				CEDC6BB92DF3285C00770BBA /* Service */,
 				CEBA3F872DF1DBEA0021D1E5 /* Helper */,
+				CE416A622DF22198001364C5 /* Extension */,
 				CEBA3F502DF1A6CD0021D1E5 /* Model */,
 				CEBA3F4F2DF1A6B30021D1E5 /* Screen */,
+				CE416A6E2DF23128001364C5 /* Font */,
 				CEBA3F632DF1AB4D0021D1E5 /* Launch Screen.storyboard */,
+				CE416A6B2DF23047001364C5 /* Info.plist */,
 				CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */,
 			);
 			path = MyGardenApp;
@@ -364,6 +433,22 @@
 				CEBA3F5D2DF1A84C0021D1E5 /* Screen */,
 			);
 			path = MyGardenAppTests;
+			sourceTree = "<group>";
+		};
+		CEDC6BB62DF3236900770BBA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEDC6BB92DF3285C00770BBA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,7 +542,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBA3F642DF1AB4D0021D1E5 /* Launch Screen.storyboard in Resources */,
+				CE416A722DF2314B001364C5 /* Onest-Regular.ttf in Resources */,
 				CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */,
+				CE416A702DF2313E001364C5 /* Onest-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,18 +567,25 @@
 				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
 				CEBA3F6E2DF1BCB20021D1E5 /* PaywallView.swift in Sources */,
 				CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */,
+				CE416A672DF224BE001364C5 /* OnboardingPageModel.swift in Sources */,
+				CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */,
+				CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */,
 				CEBA3F592DF1A7B10021D1E5 /* StartScreen.swift in Sources */,
+				CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */,
 				CEBA3F522DF1A6F10021D1E5 /* AppRouterModel.swift in Sources */,
 				CEBA3F8F2DF1DED60021D1E5 /* HistoryView.swift in Sources */,
 				CEBA3F892DF1DC010021D1E5 /* Logger.swift in Sources */,
 				CEBA3F5C2DF1A7EE0021D1E5 /* RootViewModel.swift in Sources */,
 				CEBA3F762DF1C95D0021D1E5 /* BackgroundColor.swift in Sources */,
 				CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */,
+				CE416A642DF221B8001364C5 /* View+ext.swift in Sources */,
 				CEBA3F7C2DF1CE020021D1E5 /* TabModel.swift in Sources */,
 				CEBA3F862DF1CF630021D1E5 /* MyGardenView.swift in Sources */,
+				CE416A6D2DF230BF001364C5 /* Font+ext.swift in Sources */,
 				CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */,
 				CEBA3F792DF1CCBE0021D1E5 /* MainViewModel.swift in Sources */,
 				CEBA3F822DF1CF3F0021D1E5 /* SettingsView.swift in Sources */,
+				CE416A6A2DF22C2B001364C5 /* OnboardingViewModel.swift in Sources */,
 				CEBA3F8D2DF1DEC70021D1E5 /* PlantsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,6 +741,7 @@
 				DEVELOPMENT_TEAM = Q5L7D25SC3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyGardenApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -681,6 +776,7 @@
 				DEVELOPMENT_TEAM = Q5L7D25SC3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyGardenApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
