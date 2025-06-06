@@ -21,7 +21,7 @@ struct BackgroundColor: ViewModifier {
 }
 
 extension View {
-    func backgroundColor(_ color: Color = .appBackgroundPrimary) -> some View {
+    func backgroundColor(_ color: Color = .backgroundLevel1) -> some View {
         self
             .modifier(BackgroundColor(color: color))
     }

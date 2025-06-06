@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @State var currentIndex = 0
-    @State var content: [OnboardingPageModel] = OnboardingPageModel.getAll()
+
+    @StateObject private var vm = OnboardingViewModel()
+    
     var body: some View {
-        TabView(selection: $currentIndex) {
-            ForEach(content.indices, id: \.self) { index in
-                OnboardingPageView(model: content[index])
+        TabView(selection: $vm.currentIndex) {
+            ForEach(vm.content.indices, id: \.self) { index in
+                OnboardingPageView(model: vm.content[index], vm: vm)
             }
             .tabViewDisableSwiping()
         }
@@ -25,31 +26,4 @@ struct OnboardingView: View {
 
 #Preview {
     OnboardingView()
-}
-
-struct OnboardingPageView: View {
-    
-    let model: OnboardingPageModel
-    
-    var body: some View {
-        VStack {
-            Image(model.backgroundImageName)
-                .resizable()
-                .scaledToFit()
-            
-            Spacer()
-        }
-        .overlay {
-            VStack {
-                Spacer()
-                
-                VStack {
-                    Text(model.title)
-                    Text(model.bodyText)
-                }
-                .frame(maxWidth: .infinity)
-                .background(Color.white)
-            }
-        }
-    }
 }
