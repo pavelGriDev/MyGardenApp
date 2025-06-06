@@ -40,6 +40,7 @@
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
 		CEDC6BBE2DF35F0600770BBA /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBD2DF35F0600770BBA /* PurchaseService.swift */; };
+		CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBF2DF3634900770BBA /* MockPurchaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		CEDC6BBD2DF35F0600770BBA /* PurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
+		CEDC6BBF2DF3634900770BBA /* MockPurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPurchaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,6 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				CEDC6BBD2DF35F0600770BBA /* PurchaseService.swift */,
+				CEDC6BBF2DF3634900770BBA /* MockPurchaseModel.swift */,
 			);
 			path = PurchaseService;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBA3F562DF1A77C0021D1E5 /* RootView.swift in Sources */,
+				CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */,
 				CEBA3F842DF1CF4E0021D1E5 /* CameraView.swift in Sources */,
 				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
 				CEBA3F6E2DF1BCB20021D1E5 /* PaywallView.swift in Sources */,
