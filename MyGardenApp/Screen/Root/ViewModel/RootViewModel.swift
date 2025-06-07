@@ -11,32 +11,36 @@ final class RootViewModel: ObservableObject {
     @Published private(set) var currentScreen: StartScreen = .launch
     @Published var showPaywallScreen = false
     
-    private let userDefaultService: UserDefaultsProtocol
+    /// Dependencies
+    private let userDefaultService: UserDefaultsService
+    private let purchaseService: PurchaseService
     
     init(
-        _ userDefaultService: UserDefaultsProtocol = UserDefaultsService()
+        _ userDefaultService: UserDefaultsService = UserDefaultsServiceImp(),
+        _ purchaseService: PurchaseService = MockPurchaseServiceImp.shared
     ) {
         self.userDefaultService = userDefaultService
+        self.purchaseService = purchaseService
     }
     
-    func finisOnboarding() {
-        print(#function)
+    func finisOnboardingFromOnboarding() {
         currentScreen = .main
-        print("Save state")
+//        saveOnboardingStatus()
+    }
+    
+    func finishOnboardingFromPaywall() {
+        currentScreen = .main
+//        saveOnboardingStatus()
     }
     
     func setup() async {
-        // timeDelay
-        try? await Task.sleep(nanoseconds: 2_000_000_000)
+        await purchaseService.checkStatus()
+        await purchaseService.getPaywalls()
         
         await MainActor.run {
             let status = loadOnboardingStatus()
             currentScreen = status ? .main : .onboarding
         }
-    }
-    
-    func showPaywallTest() {
-        showPaywallScreen = true
     }
     
     private func loadOnboardingStatus() -> Bool {

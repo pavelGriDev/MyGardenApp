@@ -24,7 +24,9 @@ struct OnboardingView: View {
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .errorAlert(error: $vm.appError)
         .backgroundColor()
+        .onDisappear { vm.onDisappear() }
     }
 }
 

@@ -1,22 +1,21 @@
 //
-//  OnboardingViewModel.swift
+//  PaywallViewModel.swift
 //  MyGardenApp
 //
-//  Created by Pavel Gritskov on 05.06.25.
+//  Created by Pavel Gritskov on 07.06.25.
 //
 
 import Foundation
 
-final  class OnboardingViewModel: ObservableObject {
-    @Published var currentIndex = 0
-    private(set) var content: [OnboardingPageModel] = OnboardingPageModel.getAll()
+final class OnboardingPaywallViewModel: ObservableObject {
+    @Published var freeTrialToggle = false
     @Published var showProgress = false
     @Published var appError: Error?
+    private(set) var content: PaywallContentModel = .init(purchaseModel: nil)
     
     private var finishOnboarding: () -> Void
     private var task: Task<(), Never>?
-    private var didRequestAppRating = false
-
+    
     /// Dependencies
     private let purchaseService: PurchaseService
     private let appInteractionService: AppInteractionService
@@ -31,27 +30,46 @@ final  class OnboardingViewModel: ObservableObject {
         self.appInteractionService = appInteractionService
     }
     
+    func setup() {
+        guard let paywall = purchaseService.purchase else { return }
+        content = .init(purchaseModel: paywall)
+        objectWillChange.send()
+    }
+    
     func onDisappear() {
         task?.cancel()
     }
     
-    func continueButtonPressed(_ completion: () -> Void) {
+    func continueButtonPressed(_ completion: @escaping () -> Void) {
         guard !showProgress else { return }
-        switch (currentIndex + 1 < content.count, purchaseService.purchase == nil) {
-        case (true, _):
-            currentIndex += 1
-        case (false, true):
-            finishOnboarding()
-        case (false, false):
-            completion()
+        guard let paywall = purchaseService.purchase else { return }
+        if freeTrialToggle {
+            makePurchase(with: paywall.weekWithTrial, completion)
+        } else {
+            makePurchase(with: paywall.week, completion)
         }
-        shouldRequestReview()
     }
     
-    private func shouldRequestReview() {
-        guard self.currentIndex == content.count - 1 && !didRequestAppRating else { return }
-        appInteractionService.requestAppReview()
-        didRequestAppRating = true
+    private func makePurchase(with product: MockPurchaseModel.ProductModel, _ completion: @escaping () -> Void) {
+        showProgress = true
+        Task {
+            await purchaseService.makePurchase(product)
+            await MainActor.run {
+                if purchaseService.hasPremium {
+                    finishOnboarding()
+                    completion()
+                } else {
+                    // ???: возможно вызов алерта с кнопкой "Try Again"
+                    self.appError = AppError.failedPurchase
+                }
+                showProgress = false
+            }
+        }
+    }
+    
+    func dismissButtonPressed(_ completion: () -> Void) {
+        finishOnboarding()
+        completion()
     }
     
     func termsButtonPressed(_ completion: (URL) -> Void) {
@@ -59,7 +77,7 @@ final  class OnboardingViewModel: ObservableObject {
         completion(url)
     }
     
-    func restoreButtonPressed() {
+    func restoreButtonPressed(_ completion: @escaping () -> Void) {
         guard !showProgress else { return }
         showProgress = true
         task = Task {
@@ -67,6 +85,7 @@ final  class OnboardingViewModel: ObservableObject {
             await MainActor.run {
                 if purchaseService.hasPremium {
                     finishOnboarding()
+                    completion()
                 } else {
                     self.appError = AppError.failedRestore
                 }
