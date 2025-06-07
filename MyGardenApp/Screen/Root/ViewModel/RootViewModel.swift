@@ -9,7 +9,7 @@ import Foundation
 
 final class RootViewModel: ObservableObject {
     @Published private(set) var currentScreen: StartScreen = .launch
-    @Published var showPaywallScreen = false
+    @Published var isOverlayPaywallVisible = false
     
     /// Dependencies
     private let userDefaultService: UserDefaultsService
@@ -17,10 +17,15 @@ final class RootViewModel: ObservableObject {
     
     init(
         _ userDefaultService: UserDefaultsService = UserDefaultsServiceImp(),
-        _ purchaseService: PurchaseService = MockPurchaseServiceImp.shared
+        _ purchaseService: PurchaseService = MockPurchaseServiceImp.shared,
+        _ paywallHandler: PaywallHandler = PaywallCoordinator.shared
     ) {
         self.userDefaultService = userDefaultService
         self.purchaseService = purchaseService
+        
+        paywallHandler.setPaywallHandler { [weak self] in
+            self?.showOverlayPaywall()
+        }
     }
     
     func finisOnboardingFromOnboarding() {
@@ -40,6 +45,13 @@ final class RootViewModel: ObservableObject {
         await MainActor.run {
             let status = loadOnboardingStatus()
             currentScreen = status ? .main : .onboarding
+        }
+    }
+    
+    func showOverlayPaywall() {
+        guard let _ = purchaseService.purchase else { return }
+        DispatchQueue.main.async {
+            self.isOverlayPaywallVisible = true
         }
     }
     

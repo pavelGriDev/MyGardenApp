@@ -1,5 +1,5 @@
 //
-//  PaywallViewModel.swift
+//  OverlayPaywallViewModel.swift
 //  MyGardenApp
 //
 //  Created by Pavel Gritskov on 07.06.25.
@@ -7,13 +7,11 @@
 
 import Foundation
 
-final class OnboardingPaywallViewModel: ObservableObject {
-    @Published var freeTrialToggle = false
+final class OverlayPaywallViewModel: ObservableObject {
     @Published var showProgress = false
     @Published var appError: Error?
-    private(set) var content: OnboardingPaywallContentModel = .init(purchaseModel: nil)
+    private(set) var content: OverlayPaywallContentModel = .init(purchaseModel: nil)
     
-    private var finishOnboarding: () -> Void
     private var task: Task<(), Never>?
     
     /// Dependencies
@@ -21,11 +19,9 @@ final class OnboardingPaywallViewModel: ObservableObject {
     private let appInteractionService: AppInteractionService
      
     init(
-        _ finishOnboarding: @escaping () -> Void,
         _ purchaseService: PurchaseService = MockPurchaseServiceImp.shared,
         _ appInteractionService: AppInteractionService = AppInteractionServiceImp()
     ) {
-        self.finishOnboarding = finishOnboarding
         self.purchaseService = purchaseService
         self.appInteractionService = appInteractionService
     }
@@ -40,14 +36,14 @@ final class OnboardingPaywallViewModel: ObservableObject {
         task?.cancel()
     }
     
+    func dismissButtonPressed(_ completion: () -> Void) {
+        completion()
+    }
+    
     func continueButtonPressed(_ completion: @escaping () -> Void) {
         guard !showProgress else { return }
         guard let paywall = purchaseService.purchase else { return }
-        if freeTrialToggle {
-            makePurchase(with: paywall.weekWithTrial, completion)
-        } else {
-            makePurchase(with: paywall.week, completion)
-        }
+        makePurchase(with: paywall.oneTime, completion)
     }
     
     private func makePurchase(with product: MockPurchaseModel.ProductModel, _ completion: @escaping () -> Void) {
@@ -56,7 +52,6 @@ final class OnboardingPaywallViewModel: ObservableObject {
             await purchaseService.makePurchase(product)
             await MainActor.run {
                 if purchaseService.hasPremium {
-                    finishOnboarding()
                     completion()
                 } else {
                     // ???: возможно вызов алерта с кнопкой "Try Again"
@@ -65,11 +60,6 @@ final class OnboardingPaywallViewModel: ObservableObject {
                 showProgress = false
             }
         }
-    }
-    
-    func dismissButtonPressed(_ completion: () -> Void) {
-        finishOnboarding()
-        completion()
     }
     
     func termsButtonPressed(_ completion: (URL) -> Void) {
@@ -84,7 +74,6 @@ final class OnboardingPaywallViewModel: ObservableObject {
             await purchaseService.restore()
             await MainActor.run {
                 if purchaseService.hasPremium {
-                    finishOnboarding()
                     completion()
                 } else {
                     self.appError = AppError.failedRestore

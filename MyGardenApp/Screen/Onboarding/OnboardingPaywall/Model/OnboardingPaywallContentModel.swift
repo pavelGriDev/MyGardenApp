@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PaywallContentModel {
+struct OnboardingPaywallContentModel {
     private let purchaseModel: MockPurchaseModel?
     
     init(purchaseModel: MockPurchaseModel?) {
