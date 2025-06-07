@@ -49,6 +49,19 @@ struct OnboardingPaywallView: View {
                 .padding(.horizontal, 16.0)
             }
         })
+        .overlay(content: {
+            VStack {
+                HStack {
+                    Spacer()
+                    
+                    DismissButtonView(isVisible: $vm.showProgress, action: dismissAction)
+                        .padding(.top, 4)
+                        .padding(.trailing, 20)
+                }
+                
+                Spacer()
+            }
+        })
         .backgroundColor()
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden()
@@ -77,6 +90,12 @@ struct OnboardingPaywallView: View {
     private func privacyButtonAction() {
         vm.termsButtonPressed { url in
             openUrl(url)
+        }
+    }
+    
+    private func dismissAction() {
+        vm.dismissButtonPressed() {
+            navigator.popToRoot()
         }
     }
 }

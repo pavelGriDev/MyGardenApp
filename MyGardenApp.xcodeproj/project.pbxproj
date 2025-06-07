@@ -36,6 +36,7 @@
 		CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */; };
 		CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */; };
 		CEC480FB2DF0DD2A007F88A4 /* MyGardenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */; };
+		CEC5BAC82DF45A1D002B1D52 /* DismissButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAC72DF45A1D002B1D52 /* DismissButtonView.swift */; };
 		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
@@ -93,6 +94,7 @@
 		CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenAppApp.swift; sourceTree = "<group>"; };
 		CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenAppTests.swift; sourceTree = "<group>"; };
+		CEC5BAC72DF45A1D002B1D52 /* DismissButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonView.swift; sourceTree = "<group>"; };
 		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */,
 				CEDC6BC72DF37AA800770BBA /* ProgressButton.swift */,
+				CEC5BAC72DF45A1D002B1D52 /* DismissButtonView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDC6BCC2DF39E5900770BBA /* AppError.swift in Sources */,
+				CEC5BAC82DF45A1D002B1D52 /* DismissButtonView.swift in Sources */,
 				CEBA3F562DF1A77C0021D1E5 /* RootView.swift in Sources */,
 				CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */,
 				CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */,

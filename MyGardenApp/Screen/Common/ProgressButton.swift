@@ -33,6 +33,7 @@ struct ProgressButton: View {
                     }
                 }
         }
+        .buttonStyle(.plain)
     }
 }
 

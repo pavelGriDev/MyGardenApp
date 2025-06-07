@@ -41,6 +41,7 @@ final class OnboardingPaywallViewModel: ObservableObject {
     }
     
     func continueButtonPressed(_ completion: @escaping () -> Void) {
+        guard !showProgress else { return }
         guard let paywall = purchaseService.purchase else { return }
         if freeTrialToggle {
             makePurchase(with: paywall.weekWithTrial, completion)
@@ -64,6 +65,11 @@ final class OnboardingPaywallViewModel: ObservableObject {
                 showProgress = false
             }
         }
+    }
+    
+    func dismissButtonPressed(_ completion: () -> Void) {
+        finishOnboarding()
+        completion()
     }
     
     func termsButtonPressed(_ completion: (URL) -> Void) {
