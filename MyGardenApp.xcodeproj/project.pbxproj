@@ -41,6 +41,12 @@
 		CEC5BAD12DF46748002B1D52 /* OverlayPaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAD02DF46748002B1D52 /* OverlayPaywallView.swift */; };
 		CEC5BAD32DF4675D002B1D52 /* OverlayPaywallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAD22DF4675D002B1D52 /* OverlayPaywallViewModel.swift */; };
 		CEC5BAD52DF47041002B1D52 /* PaywallCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAD42DF47041002B1D52 /* PaywallCoordinator.swift */; };
+		CEC5BAD82DF4BC19002B1D52 /* SettingsContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAD72DF4BC19002B1D52 /* SettingsContentModel.swift */; };
+		CEC5BADA2DF4BC44002B1D52 /* NavigationBarWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAD92DF4BC44002B1D52 /* NavigationBarWithTitle.swift */; };
+		CEC5BADE2DF4BC7A002B1D52 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BADD2DF4BC7A002B1D52 /* SettingsViewModel.swift */; };
+		CEC5BAE02DF4C08E002B1D52 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BADF2DF4C08E002B1D52 /* ActivityView.swift */; };
+		CEC5BAE22DF4CEF2002B1D52 /* SettingsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAE12DF4CEF2002B1D52 /* SettingsAlert.swift */; };
+		CEC5BAE42DF4CF96002B1D52 /* View+SettingsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAE32DF4CF96002B1D52 /* View+SettingsAlert.swift */; };
 		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
@@ -103,6 +109,12 @@
 		CEC5BAD02DF46748002B1D52 /* OverlayPaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPaywallView.swift; sourceTree = "<group>"; };
 		CEC5BAD22DF4675D002B1D52 /* OverlayPaywallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPaywallViewModel.swift; sourceTree = "<group>"; };
 		CEC5BAD42DF47041002B1D52 /* PaywallCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallCoordinator.swift; sourceTree = "<group>"; };
+		CEC5BAD72DF4BC19002B1D52 /* SettingsContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContentModel.swift; sourceTree = "<group>"; };
+		CEC5BAD92DF4BC44002B1D52 /* NavigationBarWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarWithTitle.swift; sourceTree = "<group>"; };
+		CEC5BADD2DF4BC7A002B1D52 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		CEC5BADF2DF4C08E002B1D52 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		CEC5BAE12DF4CEF2002B1D52 /* SettingsAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAlert.swift; sourceTree = "<group>"; };
+		CEC5BAE32DF4CF96002B1D52 /* View+SettingsAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SettingsAlert.swift"; sourceTree = "<group>"; };
 		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -143,6 +155,8 @@
 				CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */,
 				CEDC6BC72DF37AA800770BBA /* ProgressButton.swift */,
 				CEC5BAC72DF45A1D002B1D52 /* DismissButtonView.swift */,
+				CEC5BAD92DF4BC44002B1D52 /* NavigationBarWithTitle.swift */,
+				CEC5BADF2DF4C08E002B1D52 /* ActivityView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -153,6 +167,7 @@
 				CE416A632DF221B8001364C5 /* View+ext.swift */,
 				CE416A6C2DF230BF001364C5 /* Font+ext.swift */,
 				CEDC6BCD2DF39FA500770BBA /* View+ErrorAlert.swift */,
+				CEC5BAE32DF4CF96002B1D52 /* View+SettingsAlert.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -201,6 +216,7 @@
 			children = (
 				CEBA3F512DF1A6F10021D1E5 /* AppRouterModel.swift */,
 				CEDC6BCB2DF39E5900770BBA /* AppError.swift */,
+				CEC5BAE12DF4CEF2002B1D52 /* SettingsAlert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -380,7 +396,9 @@
 		CEBA3F7F2DF1CE620021D1E5 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA3F812DF1CF3F0021D1E5 /* SettingsView.swift */,
+				CEC5BADC2DF4BC6A002B1D52 /* ViewModel */,
+				CEC5BADB2DF4BC5D002B1D52 /* View */,
+				CEC5BAD62DF4BC03002B1D52 /* Model */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -514,6 +532,30 @@
 				CEC5BACE2DF46677002B1D52 /* OverlayPaywallContentModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CEC5BAD62DF4BC03002B1D52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BAD72DF4BC19002B1D52 /* SettingsContentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEC5BADB2DF4BC5D002B1D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F812DF1CF3F0021D1E5 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC5BADC2DF4BC6A002B1D52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BADD2DF4BC7A002B1D52 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CEDC6BB62DF3236900770BBA /* Components */ = {
@@ -698,7 +740,9 @@
 				CEBA3F6E2DF1BCB20021D1E5 /* OnboardingPaywallView.swift in Sources */,
 				CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */,
 				CEC5BACF2DF46677002B1D52 /* OverlayPaywallContentModel.swift in Sources */,
+				CEC5BAE02DF4C08E002B1D52 /* ActivityView.swift in Sources */,
 				CE416A672DF224BE001364C5 /* OnboardingPageModel.swift in Sources */,
+				CEC5BADE2DF4BC7A002B1D52 /* SettingsViewModel.swift in Sources */,
 				CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */,
 				CEDC6BC82DF37AA800770BBA /* ProgressButton.swift in Sources */,
 				CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */,
@@ -714,16 +758,20 @@
 				CEBA3F7C2DF1CE020021D1E5 /* TabModel.swift in Sources */,
 				CEBA3F862DF1CF630021D1E5 /* MyGardenView.swift in Sources */,
 				CEC5BAD12DF46748002B1D52 /* OverlayPaywallView.swift in Sources */,
+				CEC5BAD82DF4BC19002B1D52 /* SettingsContentModel.swift in Sources */,
 				CEDC6BCE2DF39FA500770BBA /* View+ErrorAlert.swift in Sources */,
 				CE416A6D2DF230BF001364C5 /* Font+ext.swift in Sources */,
 				CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */,
 				CEC5BAD52DF47041002B1D52 /* PaywallCoordinator.swift in Sources */,
+				CEC5BAE22DF4CEF2002B1D52 /* SettingsAlert.swift in Sources */,
 				CEDC6BD12DF3BC1600770BBA /* OnboardingPaywallContentModel.swift in Sources */,
 				CEC5BAD32DF4675D002B1D52 /* OverlayPaywallViewModel.swift in Sources */,
+				CEC5BADA2DF4BC44002B1D52 /* NavigationBarWithTitle.swift in Sources */,
 				CEBA3F792DF1CCBE0021D1E5 /* MainViewModel.swift in Sources */,
 				CEDC6BBE2DF35F0600770BBA /* PurchaseService.swift in Sources */,
 				CEBA3F822DF1CF3F0021D1E5 /* SettingsView.swift in Sources */,
 				CE416A6A2DF22C2B001364C5 /* OnboardingViewModel.swift in Sources */,
+				CEC5BAE42DF4CF96002B1D52 /* View+SettingsAlert.swift in Sources */,
 				CEBA3F8D2DF1DEC70021D1E5 /* PlantsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

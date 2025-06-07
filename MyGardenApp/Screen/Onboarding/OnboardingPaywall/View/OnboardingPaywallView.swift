@@ -148,13 +148,14 @@ extension OnboardingPaywallView {
                 Toggle(
                     isOn: $vm.freeTrialToggle,
                     label: {
-                Text(vm.content.toggleTitle)
-                    .font(.customFont(.regular, size: 14))
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
-                    .foregroundStyle(Color.textPrimary)
-            })
-            .padding(.horizontal, 16)
-        }
+                        Text(vm.content.toggleTitle)
+                            .font(.customFont(.regular, size: 14))
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.8)
+                            .foregroundStyle(Color.textPrimary)
+                    })
+                .tint(Color.appPrimary)
+                .padding(.horizontal, 16)
+            }
     }
 }

@@ -11,5 +11,7 @@
 		<string>Onest-SemiBold.ttf</string>
 		<string>Onest-Regular.ttf</string>
 	</array>
+	<key>NSUserNotificationsUsageDescription</key>
+	<string>We&apos;ll send you important notifications</string>
 </dict>
 </plist>
