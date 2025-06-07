@@ -24,12 +24,15 @@ struct MainTabBarView: View {
         }
         .onAppear { Logger.printInfo("MainTabBarView onAppear") }
         .overlay {
-            HStack {
-                Button("garden") { vm.currentTab = .myGarden }
-                Button("camera") { vm.currentTab = .camera }
-                Button("settings") { vm.currentTab = .settings }
+            VStack {
+                Spacer()
+                HStack {
+                    Button("garden") { vm.currentTab = .myGarden }
+                    Button("camera") { vm.currentTab = .camera }
+                    Button("settings") { vm.currentTab = .settings }
+                }
+                .buttonStyle(.borderedProminent)
             }
-            .buttonStyle(.borderedProminent)
         }
     }
 }

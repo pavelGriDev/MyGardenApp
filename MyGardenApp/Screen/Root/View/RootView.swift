@@ -32,8 +32,8 @@ struct RootView: View {
                 }
             }
         }
-        .fullScreenCover(isPresented: $vm.showPaywallScreen, content: {
-            Text("InUpPaywall")
+        .fullScreenCover(isPresented: $vm.isOverlayPaywallVisible, content: {
+            OverlayPaywallView()
         })
         .task {
             await vm.setup()

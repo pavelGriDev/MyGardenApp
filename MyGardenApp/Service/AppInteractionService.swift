@@ -12,7 +12,9 @@ protocol AppInteractionService {
     var appLink: URL? { get }
     var privacyLink: URL? { get }
     var termsLink: URL? { get }
+    var supportLink: URL? { get }
     func requestAppReview()
+    func openSettings()
 }
 
 protocol SettingsNavigable {
@@ -22,7 +24,7 @@ protocol SettingsNavigable {
 final class AppInteractionServiceImp: AppInteractionService, SettingsNavigable {
     
     var appLink: URL? {
-        URL(string: "https://apps.apple.com/pl/app/6743484061")
+        URL(string: "https://apps.apple.com/pl/app/1595795215")
     }
     
     var privacyLink: URL? {

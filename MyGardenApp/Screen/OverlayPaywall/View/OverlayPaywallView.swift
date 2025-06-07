@@ -1,22 +1,16 @@
 //
-//  OnboardingPaywallView.swift
+//  OverlayPaywallView.swift
 //  MyGardenApp
 //
-//  Created by Pavel Gritskov on 05.06.25.
+//  Created by Pavel Gritskov on 07.06.25.
 //
 
 import SwiftUI
-import NavigationBackport
 
-struct OnboardingPaywallView: View {
-    @EnvironmentObject var navigator: PathNavigator
+struct OverlayPaywallView: View {
     @Environment(\.openURL) var openUrl
-    
-    @StateObject private var vm: OnboardingPaywallViewModel
-    
-    init(_ finishOnboarding: @escaping () -> Void) {
-        _vm = StateObject(wrappedValue: OnboardingPaywallViewModel(finishOnboarding))
-    }
+    @Environment(\.dismiss) var dismiss
+    @StateObject private var vm = OverlayPaywallViewModel()
     
     var body: some View {
         VStack {
@@ -31,8 +25,6 @@ struct OnboardingPaywallView: View {
                     
                     VStack(spacing: 12) {
                         textContent
-                        
-                        freeTrialToggle
                     
                     ProgressButton(
                         title: vm.content.buttonTitle,
@@ -63,15 +55,13 @@ struct OnboardingPaywallView: View {
             }
         })
         .backgroundColor()
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden()
         .onAppear { vm.setup() }
         .onDisappear { vm.onDisappear() }
     }
     
     private func continueButtonAction() {
         vm.continueButtonPressed() {
-            navigator.popToRoot()
+            dismiss()
         }
     }
     
@@ -83,7 +73,7 @@ struct OnboardingPaywallView: View {
     
     private func restoreButtonAction() {
         vm.restoreButtonPressed() {
-            navigator.popToRoot()
+            dismiss()
         }
     }
     
@@ -95,16 +85,16 @@ struct OnboardingPaywallView: View {
     
     private func dismissAction() {
         vm.dismissButtonPressed() {
-            navigator.popToRoot()
+            dismiss()
         }
     }
 }
 
 #Preview {
-    OnboardingPaywallView( {} )
+    OverlayPaywallView()
 }
 
-extension OnboardingPaywallView {
+extension OverlayPaywallView {
     var backgroundImage: some View {
         ZStack(alignment: .bottom) {
             Image(uiImage: .paywallBackground)
@@ -127,34 +117,12 @@ extension OnboardingPaywallView {
                 .lineLimit(1)
                 .minimumScaleFactor(0.9)
             
-            Text(
-                vm.freeTrialToggle
-                ? vm.content.bodyTextIfTrial
-                : vm.content.bodyText
-            )
+            Text(vm.content.bodyText)
             .font(.customFont(.regular, size: 14))
             .foregroundStyle(Color.textSecondary)
             .lineLimit(2)
             .multilineTextAlignment(.center)
             .minimumScaleFactor(0.9)
-        }
-    }
-    
-    var freeTrialToggle: some View {
-        RoundedRectangle(cornerRadius: 16)
-            .fill(Color.backgroundLevel2)
-            .frame(height: 55)
-            .overlay {
-                Toggle(
-                    isOn: $vm.freeTrialToggle,
-                    label: {
-                Text(vm.content.toggleTitle)
-                    .font(.customFont(.regular, size: 14))
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
-                    .foregroundStyle(Color.textPrimary)
-            })
-            .padding(.horizontal, 16)
         }
     }
 }
