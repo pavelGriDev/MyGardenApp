@@ -25,12 +25,12 @@ final class RootViewModel: ObservableObject {
     
     func finisOnboardingFromOnboarding() {
         currentScreen = .main
-//        saveOnboardingStatus()
+        saveOnboardingStatus()
     }
     
     func finishOnboardingFromPaywall() {
         currentScreen = .main
-//        saveOnboardingStatus()
+        saveOnboardingStatus()
     }
     
     func setup() async {
