@@ -27,19 +27,21 @@ struct OnboardingPageView: View {
             VStack {
                 Spacer()
                 
-                VStack(spacing: 8.0) {
-                    Text(model.title)
-                        .font(.customFont(.semiBold, size: 20))
-                        .foregroundStyle(Color.textPrimary)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.9)
-                    
-                    Text(model.bodyText)
-                        .font(.customFont(.regular, size: 14))
-                        .foregroundStyle(Color.textSecondary)
-                        .lineLimit(2)
-                        .multilineTextAlignment(.center)
-                        .minimumScaleFactor(0.9)
+                VStack(spacing: 12) {
+                    VStack(spacing: 8) {
+                        Text(model.title)
+                            .font(.customFont(.semiBold, size: 20))
+                            .foregroundStyle(Color.textPrimary)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.9)
+                        
+                        Text(model.bodyText)
+                            .font(.customFont(.regular, size: 14))
+                            .foregroundStyle(Color.textSecondary)
+                            .lineLimit(2)
+                            .multilineTextAlignment(.center)
+                            .minimumScaleFactor(0.9)
+                    }
                     
                     ProgressButton(
                         title: model.buttonTitle,
@@ -52,12 +54,11 @@ struct OnboardingPageView: View {
                             }
                         }
                     )
-                    .padding(.top, 4)
                     
                     ActionFooterView(
-                        termsAction: termsAction,
+                        termsAction: termsButtonAction,
                         restoreAction: vm.restoreButtonPressed,
-                        privacyAction: privacyAction
+                        privacyAction: privacyButtonAction
                     )
                 }
                 .padding(.horizontal, 16.0)
@@ -65,13 +66,13 @@ struct OnboardingPageView: View {
         }
     }
     
-    private func termsAction() {
+    private func termsButtonAction() {
         vm.termsButtonPressed { url in
             openUrl(url)
         }
     }
     
-    private func privacyAction() {
+    private func privacyButtonAction() {
         vm.termsButtonPressed { url in
             openUrl(url)
         }

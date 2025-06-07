@@ -22,7 +22,7 @@
 		CEBA3F642DF1AB4D0021D1E5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBA3F632DF1AB4D0021D1E5 /* Launch Screen.storyboard */; };
 		CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F662DF1B0780021D1E5 /* LaunchView.swift */; };
 		CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */; };
-		CEBA3F6E2DF1BCB20021D1E5 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F6D2DF1BCB20021D1E5 /* PaywallView.swift */; };
+		CEBA3F6E2DF1BCB20021D1E5 /* OnboardingPaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F6D2DF1BCB20021D1E5 /* OnboardingPaywallView.swift */; };
 		CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F722DF1C0F50021D1E5 /* MainTabBarView.swift */; };
 		CEBA3F762DF1C95D0021D1E5 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F752DF1C95D0021D1E5 /* BackgroundColor.swift */; };
 		CEBA3F792DF1CCBE0021D1E5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F782DF1CCBE0021D1E5 /* MainViewModel.swift */; };
@@ -47,6 +47,8 @@
 		CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */; };
 		CEDC6BCC2DF39E5900770BBA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BCB2DF39E5900770BBA /* AppError.swift */; };
 		CEDC6BCE2DF39FA500770BBA /* View+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BCD2DF39FA500770BBA /* View+ErrorAlert.swift */; };
+		CEDC6BD12DF3BC1600770BBA /* PaywallContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BD02DF3BC1600770BBA /* PaywallContentModel.swift */; };
+		CEDC6BD42DF3C03F00770BBA /* OnboardingPaywallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BD32DF3C03F00770BBA /* OnboardingPaywallViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +77,7 @@
 		CEBA3F632DF1AB4D0021D1E5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CEBA3F662DF1B0780021D1E5 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		CEBA3F6D2DF1BCB20021D1E5 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		CEBA3F6D2DF1BCB20021D1E5 /* OnboardingPaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPaywallView.swift; sourceTree = "<group>"; };
 		CEBA3F722DF1C0F50021D1E5 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		CEBA3F752DF1C95D0021D1E5 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
 		CEBA3F782DF1CCBE0021D1E5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +104,8 @@
 		CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractionService.swift; sourceTree = "<group>"; };
 		CEDC6BCB2DF39E5900770BBA /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		CEDC6BCD2DF39FA500770BBA /* View+ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ErrorAlert.swift"; sourceTree = "<group>"; };
+		CEDC6BD02DF3BC1600770BBA /* PaywallContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallContentModel.swift; sourceTree = "<group>"; };
+		CEDC6BD32DF3C03F00770BBA /* OnboardingPaywallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPaywallViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +291,8 @@
 		CEBA3F6C2DF1BCA00021D1E5 /* Paywall */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC6BD22DF3C02600770BBA /* ViewModel */,
+				CEDC6BCF2DF3BC0200770BBA /* Model */,
 				CEBA3F6F2DF1BCC80021D1E5 /* View */,
 			);
 			path = Paywall;
@@ -295,7 +301,7 @@
 		CEBA3F6F2DF1BCC80021D1E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA3F6D2DF1BCB20021D1E5 /* PaywallView.swift */,
+				CEBA3F6D2DF1BCB20021D1E5 /* OnboardingPaywallView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,6 +505,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CEDC6BCF2DF3BC0200770BBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6BD02DF3BC1600770BBA /* PaywallContentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEDC6BD22DF3C02600770BBA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6BD32DF3C03F00770BBA /* OnboardingPaywallViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -615,8 +637,9 @@
 				CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */,
 				CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */,
 				CEBA3F842DF1CF4E0021D1E5 /* CameraView.swift in Sources */,
+				CEDC6BD42DF3C03F00770BBA /* OnboardingPaywallViewModel.swift in Sources */,
 				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
-				CEBA3F6E2DF1BCB20021D1E5 /* PaywallView.swift in Sources */,
+				CEBA3F6E2DF1BCB20021D1E5 /* OnboardingPaywallView.swift in Sources */,
 				CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */,
 				CE416A672DF224BE001364C5 /* OnboardingPageModel.swift in Sources */,
 				CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */,
@@ -636,6 +659,7 @@
 				CEDC6BCE2DF39FA500770BBA /* View+ErrorAlert.swift in Sources */,
 				CE416A6D2DF230BF001364C5 /* Font+ext.swift in Sources */,
 				CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */,
+				CEDC6BD12DF3BC1600770BBA /* PaywallContentModel.swift in Sources */,
 				CEBA3F792DF1CCBE0021D1E5 /* MainViewModel.swift in Sources */,
 				CEDC6BBE2DF35F0600770BBA /* PurchaseService.swift in Sources */,
 				CEBA3F822DF1CF3F0021D1E5 /* SettingsView.swift in Sources */,

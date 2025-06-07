@@ -23,8 +23,14 @@ final class RootViewModel: ObservableObject {
         self.purchaseService = purchaseService
     }
     
-    func finisOnboarding() {
+    func finisOnboardingFromOnboarding() {
         currentScreen = .main
+//        saveOnboardingStatus()
+    }
+    
+    func finishOnboardingFromPaywall() {
+        currentScreen = .main
+//        saveOnboardingStatus()
     }
     
     func setup() async {
@@ -36,10 +42,6 @@ final class RootViewModel: ObservableObject {
             currentScreen = status ? .main : .onboarding
         }
     }
-    
-//    func showPaywallTest() {
-//        showPaywallScreen = true
-//    }
     
     private func loadOnboardingStatus() -> Bool {
         userDefaultService.getFlag(.onboardingCompleted)

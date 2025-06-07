@@ -11,7 +11,12 @@ import NavigationBackport
 struct OnboardingPaywallView: View {
     @EnvironmentObject var navigator: PathNavigator
     @Environment(\.openURL) var openUrl
-    @StateObject private var vm = PaywallViewModel({})
+    
+    @StateObject private var vm: OnboardingPaywallViewModel
+    
+    init(_ finishOnboarding: @escaping () -> Void) {
+        _vm = StateObject(wrappedValue: OnboardingPaywallViewModel(finishOnboarding))
+    }
     
     var body: some View {
         VStack {
@@ -27,49 +32,49 @@ struct OnboardingPaywallView: View {
                     VStack(spacing: 12) {
                         textContent
                         
-                        RoundedRectangle(cornerRadius: 16)
-                            .fill(Color.backgroundLevel2)
-                            .frame(height: 55)
-                            .overlay {
-                                Toggle(
-                                    isOn: $vm.freeTrialToggle,
-                                    label: {
-                                Text(vm.content.toggleTitle)
-                                    .font(.customFont(.regular, size: 14))
-                                    .lineLimit(1)
-                                    .minimumScaleFactor(0.8)
-                                    .foregroundStyle(Color.textPrimary)
-                            })
-                            .padding(.horizontal, 16)
-                        }
+                        freeTrialToggle
                     
                     ProgressButton(
                         title: vm.content.buttonTitle,
                         showProgress: $vm.showProgress,
-                        action: vm.continueButtonPressed
+                        action: continueButtonAction
                     )
                     
                     ActionFooterView(
-                        termsAction: termsAction,
-                        restoreAction: vm.restoreButtonPressed,
-                        privacyAction: privacyAction
+                        termsAction: termsButtonAction,
+                        restoreAction: restoreButtonAction,
+                        privacyAction: privacyButtonAction
                     )
                 }
                 .padding(.horizontal, 16.0)
             }
         })
         .backgroundColor()
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden()
         .onAppear { vm.setup() }
         .onDisappear { vm.onDisappear() }
     }
     
-    private func termsAction() {
+    private func continueButtonAction() {
+        vm.continueButtonPressed() {
+            navigator.popToRoot()
+        }
+    }
+    
+    private func termsButtonAction() {
         vm.termsButtonPressed { url in
             openUrl(url)
         }
     }
     
-    private func privacyAction() {
+    private func restoreButtonAction() {
+        vm.restoreButtonPressed() {
+            navigator.popToRoot()
+        }
+    }
+    
+    private func privacyButtonAction() {
         vm.termsButtonPressed { url in
             openUrl(url)
         }
@@ -77,7 +82,7 @@ struct OnboardingPaywallView: View {
 }
 
 #Preview {
-    OnboardingPaywallView()
+    OnboardingPaywallView( {} )
 }
 
 extension OnboardingPaywallView {
@@ -113,6 +118,24 @@ extension OnboardingPaywallView {
             .lineLimit(2)
             .multilineTextAlignment(.center)
             .minimumScaleFactor(0.9)
+        }
+    }
+    
+    var freeTrialToggle: some View {
+        RoundedRectangle(cornerRadius: 16)
+            .fill(Color.backgroundLevel2)
+            .frame(height: 55)
+            .overlay {
+                Toggle(
+                    isOn: $vm.freeTrialToggle,
+                    label: {
+                Text(vm.content.toggleTitle)
+                    .font(.customFont(.regular, size: 14))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+                    .foregroundStyle(Color.textPrimary)
+            })
+            .padding(.horizontal, 16)
         }
     }
 }

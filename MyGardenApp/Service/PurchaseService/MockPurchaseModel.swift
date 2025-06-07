@@ -9,6 +9,7 @@ import Foundation
 
 struct MockPurchaseModel {
     let week: ProductModel
+    let weekWithTrial: ProductModel
     let oneTime: ProductModel
     
     struct ProductModel {
@@ -18,6 +19,7 @@ struct MockPurchaseModel {
     
     static let getPurchaseModel = MockPurchaseModel(
         week: .init(price: "4.99", currencySymbol: "$"),
+        weekWithTrial: .init(price: "4.99", currencySymbol: "$"),
         oneTime: .init(price: "119.99", currencySymbol: "$")
     )
 }

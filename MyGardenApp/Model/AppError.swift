@@ -8,6 +8,7 @@
 import Foundation
 
 enum AppError: Error, LocalizedError {
+    case failedPurchase
     case failedRestore
     case unknown
     

@@ -12,7 +12,7 @@ protocol AppInteractionService {
     var appLink: URL? { get }
     var privacyLink: URL? { get }
     var termsLink: URL? { get }
-    func showAppRate()
+    func requestAppReview()
 }
 
 protocol SettingsNavigable {
@@ -43,7 +43,7 @@ final class AppInteractionServiceImp: AppInteractionService, SettingsNavigable {
         }
     }
     
-    func showAppRate() {
+    func requestAppReview() {
         if let windowScene = UIApplication.shared.connectedScenes
             .first as? UIWindowScene {
             SKStoreReviewController.requestReview(in: windowScene)

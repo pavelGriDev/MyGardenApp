@@ -20,14 +20,20 @@ struct RootView: View {
                 case .launch:
                     LaunchView()
                 case .onboarding:
-                    OnboardingView(vm.finisOnboarding)
+                    OnboardingView(vm.finisOnboardingFromOnboarding)
                 case .main:
                     MainTabBarView()
                 }
             }
+            .nbNavigationDestination(for: AppRouterModel.self) { screen in
+                switch screen {
+                case .paywall:
+                    OnboardingPaywallView(vm.finishOnboardingFromPaywall)
+                }
+            }
         }
         .fullScreenCover(isPresented: $vm.showPaywallScreen, content: {
-            PaywallView()
+            Text("InUpPaywall")
         })
         .task {
             await vm.setup()
