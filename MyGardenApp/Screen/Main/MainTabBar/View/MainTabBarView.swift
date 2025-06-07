@@ -26,12 +26,12 @@ struct MainTabBarView: View {
         .overlay {
             VStack {
                 Spacer()
-                HStack {
-                    Button("garden") { vm.currentTab = .myGarden }
-                    Button("camera") { vm.currentTab = .camera }
-                    Button("settings") { vm.currentTab = .settings }
-                }
-                .buttonStyle(.borderedProminent)
+                
+                TabBarMenu(
+                    currentTab: $vm.currentTab,
+                    tabAction: vm.tabButtonPressed(with:)
+                )
+                .padding(.bottom, 16)
             }
         }
     }
@@ -39,4 +39,39 @@ struct MainTabBarView: View {
 
 #Preview {
     MainTabBarView()
+}
+
+fileprivate struct TabBarMenu: View {
+    
+    @Binding var currentTab: TabModel
+    let tabAction: (TabModel) -> Void
+    
+    var body: some View {
+        HStack {
+            ForEach(TabModel.allCases) { model in
+                Button {
+                    tabAction(model)
+                } label: {
+                    Image(model.tabImageName)
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundStyle(
+                            currentTab == model
+                            ? Color.appPrimary
+                            : Color.textTretiery
+                        )
+                        .frame(height: 24)
+                        .padding(.horizontal, 28)
+                        .padding(.vertical, 16)
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .background(Color.backgroundLevel2)
+        .clipShape(Capsule())
+        .shadow(
+            color: Color.black.opacity(0.1),
+            radius: 30, x: 0, y: 4
+        )
+    }
 }

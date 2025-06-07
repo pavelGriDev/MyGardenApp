@@ -9,4 +9,8 @@ import Foundation
 
 final class MainViewModel: ObservableObject {
     @Published var currentTab: TabModel = .myGarden
+    
+    func tabButtonPressed(with tab: TabModel) {
+        currentTab = tab
+    }
 }
