@@ -50,6 +50,8 @@
 		CEC5BAE72DF50ACF002B1D52 /* MyGardenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAE62DF50ACF002B1D52 /* MyGardenViewModel.swift */; };
 		CEC5BAEB2DF50B0A002B1D52 /* MyGardenTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAEA2DF50B0A002B1D52 /* MyGardenTab.swift */; };
 		CEC5BAED2DF5BD54002B1D52 /* MyGardenEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAEC2DF5BD54002B1D52 /* MyGardenEmptyView.swift */; };
+		CEC5BAF02DF5C375002B1D52 /* PlantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAEF2DF5C375002B1D52 /* PlantsViewModel.swift */; };
+		CEC5BAF52DF5C648002B1D52 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAF42DF5C648002B1D52 /* HistoryViewModel.swift */; };
 		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
@@ -121,6 +123,8 @@
 		CEC5BAE62DF50ACF002B1D52 /* MyGardenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenViewModel.swift; sourceTree = "<group>"; };
 		CEC5BAEA2DF50B0A002B1D52 /* MyGardenTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenTab.swift; sourceTree = "<group>"; };
 		CEC5BAEC2DF5BD54002B1D52 /* MyGardenEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenEmptyView.swift; sourceTree = "<group>"; };
+		CEC5BAEF2DF5C375002B1D52 /* PlantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewModel.swift; sourceTree = "<group>"; };
+		CEC5BAF42DF5C648002B1D52 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -431,7 +435,8 @@
 		CEBA3F8A2DF1DEA10021D1E5 /* Plants */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA3F8C2DF1DEC70021D1E5 /* PlantsView.swift */,
+				CEC5BAF12DF5C620002B1D52 /* View */,
+				CEC5BAEE2DF5C364002B1D52 /* ViewModel */,
 			);
 			path = Plants;
 			sourceTree = "<group>";
@@ -439,7 +444,8 @@
 		CEBA3F8B2DF1DEAA0021D1E5 /* History */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA3F8E2DF1DED60021D1E5 /* HistoryView.swift */,
+				CEC5BAF32DF5C631002B1D52 /* ViewModel */,
+				CEC5BAF22DF5C62B002B1D52 /* View */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -450,7 +456,6 @@
 				CEC5BAE92DF50AF6002B1D52 /* Model */,
 				CEC5BAE82DF50AE5002B1D52 /* View */,
 				CEC5BAE52DF50ABB002B1D52 /* ViewModel */,
-				CEBA3F852DF1CF630021D1E5 /* MyGardenView.swift */,
 			);
 			path = MyGarden;
 			sourceTree = "<group>";
@@ -579,6 +584,7 @@
 		CEC5BAE82DF50AE5002B1D52 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEBA3F852DF1CF630021D1E5 /* MyGardenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -589,6 +595,38 @@
 				CEC5BAEA2DF50B0A002B1D52 /* MyGardenTab.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CEC5BAEE2DF5C364002B1D52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BAEF2DF5C375002B1D52 /* PlantsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEC5BAF12DF5C620002B1D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F8C2DF1DEC70021D1E5 /* PlantsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC5BAF22DF5C62B002B1D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F8E2DF1DED60021D1E5 /* HistoryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC5BAF32DF5C631002B1D52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BAF42DF5C648002B1D52 /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CEDC6BB62DF3236900770BBA /* Components */ = {
@@ -768,6 +806,7 @@
 				CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */,
 				CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */,
 				CEBA3F842DF1CF4E0021D1E5 /* CameraView.swift in Sources */,
+				CEC5BAF52DF5C648002B1D52 /* HistoryViewModel.swift in Sources */,
 				CEDC6BD42DF3C03F00770BBA /* OnboardingPaywallViewModel.swift in Sources */,
 				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
 				CEC5BAEB2DF50B0A002B1D52 /* MyGardenTab.swift in Sources */,
@@ -776,6 +815,7 @@
 				CEC5BACF2DF46677002B1D52 /* OverlayPaywallContentModel.swift in Sources */,
 				CEC5BAE02DF4C08E002B1D52 /* ActivityView.swift in Sources */,
 				CE416A672DF224BE001364C5 /* OnboardingPageModel.swift in Sources */,
+				CEC5BAF02DF5C375002B1D52 /* PlantsViewModel.swift in Sources */,
 				CEC5BADE2DF4BC7A002B1D52 /* SettingsViewModel.swift in Sources */,
 				CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */,
 				CEDC6BC82DF37AA800770BBA /* ProgressButton.swift in Sources */,

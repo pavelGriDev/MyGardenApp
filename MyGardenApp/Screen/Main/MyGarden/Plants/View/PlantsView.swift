@@ -24,28 +24,23 @@ struct PlantsView: View {
             case false:
                 ScrollView(showsIndicators: false) {
                     LazyVGrid(columns: rows, spacing: 12) {
-                        ForEach(0..<20) { _ in
+                        ForEach($vm.content) { item in
                             RoundedRectangle(cornerRadius: 16)
                                 .fill(Color.backgroundLevel2)
                                 .frame(height: 218)
                         }
                     }
                     .padding(.horizontal, 16)
+                    .padding(.top, 8)
                 }
             }
         }
         .padding(.top, 96)
-        .overlay(content: {
-            NavigationBarWithTitle(title: "My Garden")
-        })
         .backgroundColor()
+        .onAppear { vm.setup() }
     }
 }
 
 #Preview {
     PlantsView()
-}
-
-final class PlantsViewModel: ObservableObject {
-    @Published var content: [String] = []
 }

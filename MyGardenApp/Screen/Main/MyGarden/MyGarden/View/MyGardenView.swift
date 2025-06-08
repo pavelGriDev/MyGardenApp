@@ -17,6 +17,9 @@ struct MyGardenView: View {
                 .tag(MyGardenTab.history)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .overlay(content: {
+            NavigationBarWithTitle(title: "My Garden")
+        })
         .overlay {
             VStack {
                 TopTabMenu(
