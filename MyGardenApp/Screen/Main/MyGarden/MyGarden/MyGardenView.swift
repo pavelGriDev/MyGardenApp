@@ -7,30 +7,23 @@
 
 import SwiftUI
 
-enum MyGardenScreen {
-    case plants
-    case history
-}
-
 struct MyGardenView: View {
     @ObservedObject private var vm = MyGardenViewModel()
     var body: some View {
-        TabView(selection: $vm.currentScreen) {
+        TabView(selection: $vm.currentTab) {
             PlantsView()
-                .onAppear { Logger.printInfo("Plants view onAppear") }
-                .tag(MyGardenScreen.plants)
+                .tag(MyGardenTab.plants)
             HistoryView()
-                .onAppear { Logger.printInfo("History view onAppear") }
-                .tag(MyGardenScreen.history)
+                .tag(MyGardenTab.history)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .overlay {
             VStack {
-                HStack {
-                    Button("plants") { vm.currentScreen = .plants }
-                    Button("history") { vm.currentScreen = .history }
-                }
-                .buttonStyle(.borderedProminent)
+                TopTabMenu(
+                    currentTab: $vm.currentTab,
+                    tabAction: vm.topTabButtonPressed(with:)
+                )
+                .padding(.top, 48)
                 
                 Spacer()
             }
@@ -42,6 +35,40 @@ struct MyGardenView: View {
     MyGardenView()
 }
 
-final class MyGardenViewModel: ObservableObject {
-    @Published var currentScreen: MyGardenScreen = .plants
+fileprivate struct TopTabMenu: View {
+    @Binding var currentTab: MyGardenTab
+    let tabAction: (MyGardenTab) -> Void
+    
+    var body: some View {
+        HStack(spacing: 8) {
+            ForEach(MyGardenTab.allCases) { model in
+                Button {
+                    tabAction(model)
+                } label: {
+                    Text(model.title)
+                        .font(.customFont(
+                            currentTab == model
+                            ? .semiBold
+                            : .regular,
+                            size: 16)
+                        )
+                        .foregroundStyle(
+                            currentTab == model
+                            ? Color.backgroundLevel2
+                            : Color.appPrimary
+                        )
+                        .padding(.vertical, 11)
+                        .frame(width: 120)
+                        .background(
+                            currentTab == model
+                            ? Color.appPrimary
+                            : Color.backgroundLevel2
+                        )
+                        .clipShape(Capsule())
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .frame(height: 56, alignment: .top)
+    }
 }

@@ -13,7 +13,6 @@ struct MainTabBarView: View {
     var body: some View {
         TabView(selection: $vm.currentTab) {
             MyGardenView()
-                .onAppear { Logger.printInfo("MyGardenView onAppear") }
                 .tag(TabModel.myGarden)
             CameraView()
                 .onAppear { Logger.printInfo("CameraView onAppear") }

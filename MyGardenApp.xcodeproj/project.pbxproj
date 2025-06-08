@@ -47,6 +47,9 @@
 		CEC5BAE02DF4C08E002B1D52 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BADF2DF4C08E002B1D52 /* ActivityView.swift */; };
 		CEC5BAE22DF4CEF2002B1D52 /* SettingsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAE12DF4CEF2002B1D52 /* SettingsAlert.swift */; };
 		CEC5BAE42DF4CF96002B1D52 /* View+SettingsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAE32DF4CF96002B1D52 /* View+SettingsAlert.swift */; };
+		CEC5BAE72DF50ACF002B1D52 /* MyGardenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAE62DF50ACF002B1D52 /* MyGardenViewModel.swift */; };
+		CEC5BAEB2DF50B0A002B1D52 /* MyGardenTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAEA2DF50B0A002B1D52 /* MyGardenTab.swift */; };
+		CEC5BAED2DF5BD54002B1D52 /* MyGardenEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAEC2DF5BD54002B1D52 /* MyGardenEmptyView.swift */; };
 		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
@@ -115,6 +118,9 @@
 		CEC5BADF2DF4C08E002B1D52 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		CEC5BAE12DF4CEF2002B1D52 /* SettingsAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAlert.swift; sourceTree = "<group>"; };
 		CEC5BAE32DF4CF96002B1D52 /* View+SettingsAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SettingsAlert.swift"; sourceTree = "<group>"; };
+		CEC5BAE62DF50ACF002B1D52 /* MyGardenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenViewModel.swift; sourceTree = "<group>"; };
+		CEC5BAEA2DF50B0A002B1D52 /* MyGardenTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenTab.swift; sourceTree = "<group>"; };
+		CEC5BAEC2DF5BD54002B1D52 /* MyGardenEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenEmptyView.swift; sourceTree = "<group>"; };
 		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 				CEC5BAC72DF45A1D002B1D52 /* DismissButtonView.swift */,
 				CEC5BAD92DF4BC44002B1D52 /* NavigationBarWithTitle.swift */,
 				CEC5BADF2DF4C08E002B1D52 /* ActivityView.swift */,
+				CEC5BAEC2DF5BD54002B1D52 /* MyGardenEmptyView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -440,6 +447,9 @@
 		CEBA3F902DF1DF0D0021D1E5 /* MyGarden */ = {
 			isa = PBXGroup;
 			children = (
+				CEC5BAE92DF50AF6002B1D52 /* Model */,
+				CEC5BAE82DF50AE5002B1D52 /* View */,
+				CEC5BAE52DF50ABB002B1D52 /* ViewModel */,
 				CEBA3F852DF1CF630021D1E5 /* MyGardenView.swift */,
 			);
 			path = MyGarden;
@@ -556,6 +566,29 @@
 				CEC5BADD2DF4BC7A002B1D52 /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEC5BAE52DF50ABB002B1D52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BAE62DF50ACF002B1D52 /* MyGardenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEC5BAE82DF50AE5002B1D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC5BAE92DF50AF6002B1D52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BAEA2DF50B0A002B1D52 /* MyGardenTab.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CEDC6BB62DF3236900770BBA /* Components */ = {
@@ -737,6 +770,7 @@
 				CEBA3F842DF1CF4E0021D1E5 /* CameraView.swift in Sources */,
 				CEDC6BD42DF3C03F00770BBA /* OnboardingPaywallViewModel.swift in Sources */,
 				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
+				CEC5BAEB2DF50B0A002B1D52 /* MyGardenTab.swift in Sources */,
 				CEBA3F6E2DF1BCB20021D1E5 /* OnboardingPaywallView.swift in Sources */,
 				CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */,
 				CEC5BACF2DF46677002B1D52 /* OverlayPaywallContentModel.swift in Sources */,
@@ -746,6 +780,7 @@
 				CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */,
 				CEDC6BC82DF37AA800770BBA /* ProgressButton.swift in Sources */,
 				CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */,
+				CEC5BAED2DF5BD54002B1D52 /* MyGardenEmptyView.swift in Sources */,
 				CEBA3F592DF1A7B10021D1E5 /* StartScreen.swift in Sources */,
 				CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */,
 				CEBA3F522DF1A6F10021D1E5 /* AppRouterModel.swift in Sources */,
@@ -753,6 +788,7 @@
 				CEBA3F892DF1DC010021D1E5 /* Logger.swift in Sources */,
 				CEBA3F5C2DF1A7EE0021D1E5 /* RootViewModel.swift in Sources */,
 				CEBA3F762DF1C95D0021D1E5 /* BackgroundColor.swift in Sources */,
+				CEC5BAE72DF50ACF002B1D52 /* MyGardenViewModel.swift in Sources */,
 				CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */,
 				CE416A642DF221B8001364C5 /* View+ext.swift in Sources */,
 				CEBA3F7C2DF1CE020021D1E5 /* TabModel.swift in Sources */,
