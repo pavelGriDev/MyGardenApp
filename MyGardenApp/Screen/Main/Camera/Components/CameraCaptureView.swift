@@ -15,6 +15,7 @@ struct CameraCaptureView: View {
         ZStack {
 //            Color.gray
 //                .ignoresSafeArea()
+            
             CameraPreviewHolder(captureSession: vm.cameraService.session)
                 .ignoresSafeArea()
             
@@ -30,6 +31,7 @@ struct CameraCaptureView: View {
                 HStack {
                     CircleButton(
                         imageIcon: .galleryIcon,
+                        style: .medium,
                         action: vm.galleryButtonPressed
                     )
                     
@@ -41,6 +43,7 @@ struct CameraCaptureView: View {
                     
                     CircleButton(
                         imageIcon: .guideIcon,
+                        style: .medium,
                         action: vm.guideButtonPressed
                     )
                 }
@@ -102,27 +105,6 @@ struct CameraCaptureView: View {
                         .foregroundStyle(Color.backgroundLevel1)
                         .frame(width: 60, height: 60)
                 }
-        }
-        .buttonStyle(.plain)
-    }
-}
-
-fileprivate struct CircleButton: View {
-    let imageIcon: UIImage
-    let action: () -> Void
-    
-    var body: some View {
-        Button {
-            action()
-        } label: {
-            Image(uiImage: imageIcon)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 24, height: 24)
-                .foregroundStyle(Color.appPrimary)
-                .padding(18)
-                .background(Color.backgroundLevel3)
-                .clipShape(Circle())
         }
         .buttonStyle(.plain)
     }

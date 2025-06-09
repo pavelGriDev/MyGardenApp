@@ -56,6 +56,9 @@
 		CEC5BAFA2DF62834002B1D52 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAF92DF62834002B1D52 /* CameraPreviewView.swift */; };
 		CEC5BAFD2DF66259002B1D52 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAFC2DF66259002B1D52 /* CameraViewModel.swift */; };
 		CEC5BAFF2DF67606002B1D52 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAFE2DF67606002B1D52 /* CameraCaptureView.swift */; };
+		CEC5BB012DF71F47002B1D52 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB002DF71F47002B1D52 /* CircleButton.swift */; };
+		CEC5BB032DF75393002B1D52 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB022DF75393002B1D52 /* CommonButton.swift */; };
+		CEC5BB052DF753EE002B1D52 /* CameraPhotoReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB042DF753EE002B1D52 /* CameraPhotoReviewView.swift */; };
 		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
@@ -133,6 +136,9 @@
 		CEC5BAF92DF62834002B1D52 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 		CEC5BAFC2DF66259002B1D52 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		CEC5BAFE2DF67606002B1D52 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
+		CEC5BB002DF71F47002B1D52 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		CEC5BB022DF75393002B1D52 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		CEC5BB042DF753EE002B1D52 /* CameraPhotoReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPhotoReviewView.swift; sourceTree = "<group>"; };
 		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -176,6 +182,8 @@
 				CEC5BAD92DF4BC44002B1D52 /* NavigationBarWithTitle.swift */,
 				CEC5BADF2DF4C08E002B1D52 /* ActivityView.swift */,
 				CEC5BAEC2DF5BD54002B1D52 /* MyGardenEmptyView.swift */,
+				CEC5BB002DF71F47002B1D52 /* CircleButton.swift */,
+				CEC5BB022DF75393002B1D52 /* CommonButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -407,9 +415,9 @@
 		CEBA3F7E2DF1CE5B0021D1E5 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				CEC5BB062DF75F33002B1D52 /* View */,
 				CEC5BAFB2DF66245002B1D52 /* ViewModel */,
 				CEC5BAF82DF6280E002B1D52 /* Components */,
-				CEBA3F832DF1CF4E0021D1E5 /* CameraView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -644,6 +652,7 @@
 			children = (
 				CEC5BAF92DF62834002B1D52 /* CameraPreviewView.swift */,
 				CEC5BAFE2DF67606002B1D52 /* CameraCaptureView.swift */,
+				CEC5BB042DF753EE002B1D52 /* CameraPhotoReviewView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -654,6 +663,14 @@
 				CEC5BAFC2DF66259002B1D52 /* CameraViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEC5BB062DF75F33002B1D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA3F832DF1CF4E0021D1E5 /* CameraView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CEDC6BB62DF3236900770BBA /* Components */ = {
@@ -849,6 +866,8 @@
 				CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */,
 				CEDC6BC82DF37AA800770BBA /* ProgressButton.swift in Sources */,
 				CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */,
+				CEC5BB012DF71F47002B1D52 /* CircleButton.swift in Sources */,
+				CEC5BB052DF753EE002B1D52 /* CameraPhotoReviewView.swift in Sources */,
 				CEC5BAED2DF5BD54002B1D52 /* MyGardenEmptyView.swift in Sources */,
 				CEBA3F592DF1A7B10021D1E5 /* StartScreen.swift in Sources */,
 				CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */,
@@ -873,6 +892,7 @@
 				CEC5BAF72DF6242A002B1D52 /* CameraService.swift in Sources */,
 				CEC5BAFA2DF62834002B1D52 /* CameraPreviewView.swift in Sources */,
 				CEDC6BD12DF3BC1600770BBA /* OnboardingPaywallContentModel.swift in Sources */,
+				CEC5BB032DF75393002B1D52 /* CommonButton.swift in Sources */,
 				CEC5BAD32DF4675D002B1D52 /* OverlayPaywallViewModel.swift in Sources */,
 				CEC5BADA2DF4BC44002B1D52 /* NavigationBarWithTitle.swift in Sources */,
 				CEBA3F792DF1CCBE0021D1E5 /* MainViewModel.swift in Sources */,
