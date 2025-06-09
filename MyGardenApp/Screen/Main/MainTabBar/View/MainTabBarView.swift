@@ -12,15 +12,21 @@ struct MainTabBarView: View {
     
     var body: some View {
         TabView(selection: $vm.currentTab) {
-            MyGardenView()
-                .tag(TabModel.myGarden)
-            CameraView()
-                .onAppear { Logger.printInfo("CameraView onAppear") }
-                .tag(TabModel.camera)
-            SettingsView()
-                .onAppear { Logger.printInfo("SettingsView onAppear") }
-                .tag(TabModel.settings)
+            Group {
+                MyGardenView()
+                    .tag(TabModel.myGarden)
+                CameraView()
+                    .onAppear { Logger.printInfo("CameraView onAppear") }
+                    .tag(TabModel.camera)
+                SettingsView()
+                    .onAppear { Logger.printInfo("SettingsView onAppear") }
+                    .tag(TabModel.settings)
+            }
+            .tabViewDisableSwiping()
         }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        .ignoresSafeArea()
+        .backgroundColor()
         .onAppear { Logger.printInfo("MainTabBarView onAppear") }
         .overlay {
             VStack {
