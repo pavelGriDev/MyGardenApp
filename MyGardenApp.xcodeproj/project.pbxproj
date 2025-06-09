@@ -59,6 +59,10 @@
 		CEC5BB012DF71F47002B1D52 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB002DF71F47002B1D52 /* CircleButton.swift */; };
 		CEC5BB032DF75393002B1D52 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB022DF75393002B1D52 /* CommonButton.swift */; };
 		CEC5BB052DF753EE002B1D52 /* CameraPhotoReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB042DF753EE002B1D52 /* CameraPhotoReviewView.swift */; };
+		CEC5BB0E2DF761B4002B1D52 /* IdentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB0D2DF761B4002B1D52 /* IdentificationView.swift */; };
+		CEC5BB102DF761C5002B1D52 /* plantsProgress.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEC5BB0F2DF761C5002B1D52 /* plantsProgress.gif */; };
+		CEC5BB122DF76853002B1D52 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB112DF76853002B1D52 /* GifView.swift */; };
+		CEC5BB142DF76D3F002B1D52 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB132DF76D3F002B1D52 /* LoadingView.swift */; };
 		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
@@ -139,6 +143,10 @@
 		CEC5BB002DF71F47002B1D52 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		CEC5BB022DF75393002B1D52 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
 		CEC5BB042DF753EE002B1D52 /* CameraPhotoReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPhotoReviewView.swift; sourceTree = "<group>"; };
+		CEC5BB0D2DF761B4002B1D52 /* IdentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificationView.swift; sourceTree = "<group>"; };
+		CEC5BB0F2DF761C5002B1D52 /* plantsProgress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plantsProgress.gif; sourceTree = "<group>"; };
+		CEC5BB112DF76853002B1D52 /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
+		CEC5BB132DF76D3F002B1D52 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -184,6 +192,8 @@
 				CEC5BAEC2DF5BD54002B1D52 /* MyGardenEmptyView.swift */,
 				CEC5BB002DF71F47002B1D52 /* CircleButton.swift */,
 				CEC5BB022DF75393002B1D52 /* CommonButton.swift */,
+				CEC5BB112DF76853002B1D52 /* GifView.swift */,
+				CEC5BB132DF76D3F002B1D52 /* LoadingView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -227,6 +237,7 @@
 		CEBA3F4F2DF1A6B30021D1E5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				CEC5BB0C2DF761A3002B1D52 /* Identification */,
 				CEBA3F742DF1C8C20021D1E5 /* Modifier */,
 				CE416A612DF21DAE001364C5 /* Common */,
 				CEBA3F532DF1A7610021D1E5 /* Root */,
@@ -508,6 +519,7 @@
 				CE416A6E2DF23128001364C5 /* Font */,
 				CEBA3F632DF1AB4D0021D1E5 /* Launch Screen.storyboard */,
 				CE416A6B2DF23047001364C5 /* Info.plist */,
+				CEC5BB0F2DF761C5002B1D52 /* plantsProgress.gif */,
 				CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */,
 			);
 			path = MyGardenApp;
@@ -673,6 +685,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CEC5BB0C2DF761A3002B1D52 /* Identification */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BB0D2DF761B4002B1D52 /* IdentificationView.swift */,
+			);
+			path = Identification;
+			sourceTree = "<group>";
+		};
 		CEDC6BB62DF3236900770BBA /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -828,6 +848,7 @@
 				CE416A722DF2314B001364C5 /* Onest-Regular.ttf in Resources */,
 				CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */,
 				CE416A702DF2313E001364C5 /* Onest-SemiBold.ttf in Resources */,
+				CEC5BB102DF761C5002B1D52 /* plantsProgress.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,6 +874,7 @@
 				CEBA3F842DF1CF4E0021D1E5 /* CameraView.swift in Sources */,
 				CEC5BAF52DF5C648002B1D52 /* HistoryViewModel.swift in Sources */,
 				CEDC6BD42DF3C03F00770BBA /* OnboardingPaywallViewModel.swift in Sources */,
+				CEC5BB142DF76D3F002B1D52 /* LoadingView.swift in Sources */,
 				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
 				CEC5BAEB2DF50B0A002B1D52 /* MyGardenTab.swift in Sources */,
 				CEBA3F6E2DF1BCB20021D1E5 /* OnboardingPaywallView.swift in Sources */,
@@ -868,6 +890,7 @@
 				CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */,
 				CEC5BB012DF71F47002B1D52 /* CircleButton.swift in Sources */,
 				CEC5BB052DF753EE002B1D52 /* CameraPhotoReviewView.swift in Sources */,
+				CEC5BB122DF76853002B1D52 /* GifView.swift in Sources */,
 				CEC5BAED2DF5BD54002B1D52 /* MyGardenEmptyView.swift in Sources */,
 				CEBA3F592DF1A7B10021D1E5 /* StartScreen.swift in Sources */,
 				CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */,
@@ -880,6 +903,7 @@
 				CEC5BAE72DF50ACF002B1D52 /* MyGardenViewModel.swift in Sources */,
 				CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */,
 				CE416A642DF221B8001364C5 /* View+ext.swift in Sources */,
+				CEC5BB0E2DF761B4002B1D52 /* IdentificationView.swift in Sources */,
 				CEBA3F7C2DF1CE020021D1E5 /* TabModel.swift in Sources */,
 				CEBA3F862DF1CF630021D1E5 /* MyGardenView.swift in Sources */,
 				CEC5BAD12DF46748002B1D52 /* OverlayPaywallView.swift in Sources */,
