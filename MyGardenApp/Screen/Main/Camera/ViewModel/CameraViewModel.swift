@@ -23,6 +23,19 @@ final class CameraViewModel: ObservableObject {
         self.cameraService.captureErrorCompletion = { [weak self] error in
             self?.appError = error
         }
+        
+        self.cameraService.imageCaptureCompletion = { [weak self] imageData in
+            guard let image = UIImage(data: imageData) else {
+                DispatchQueue.main.async {
+                    self?.appError = AppError.unknown
+                }
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self?.userImage = image
+            }
+        }
     }
     
     func startSession() {
@@ -38,10 +51,22 @@ final class CameraViewModel: ObservableObject {
     }
     
     func galleryButtonPressed() {
-        
+        // TODO: _
     }
     
     func guideButtonPressed() {
+        // TODO: _
+    }
+    
+    func retakeButtonPressed() {
+        userImage = nil
+    }
+    
+    func identificationButtonPressed() {
+        
+    }
+    
+    func diagnosticsButtonPressed() {
         
     }
 }
