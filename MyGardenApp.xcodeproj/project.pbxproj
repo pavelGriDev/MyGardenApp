@@ -55,6 +55,7 @@
 		CEC5BAF72DF6242A002B1D52 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAF62DF6242A002B1D52 /* CameraService.swift */; };
 		CEC5BAFA2DF62834002B1D52 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAF92DF62834002B1D52 /* CameraPreviewView.swift */; };
 		CEC5BAFD2DF66259002B1D52 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAFC2DF66259002B1D52 /* CameraViewModel.swift */; };
+		CEC5BAFF2DF67606002B1D52 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAFE2DF67606002B1D52 /* CameraCaptureView.swift */; };
 		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
@@ -131,6 +132,7 @@
 		CEC5BAF62DF6242A002B1D52 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		CEC5BAF92DF62834002B1D52 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 		CEC5BAFC2DF66259002B1D52 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		CEC5BAFE2DF67606002B1D52 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
 		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -641,6 +643,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC5BAF92DF62834002B1D52 /* CameraPreviewView.swift */,
+				CEC5BAFE2DF67606002B1D52 /* CameraCaptureView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -836,6 +839,7 @@
 				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
 				CEC5BAEB2DF50B0A002B1D52 /* MyGardenTab.swift in Sources */,
 				CEBA3F6E2DF1BCB20021D1E5 /* OnboardingPaywallView.swift in Sources */,
+				CEC5BAFF2DF67606002B1D52 /* CameraCaptureView.swift in Sources */,
 				CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */,
 				CEC5BACF2DF46677002B1D52 /* OverlayPaywallContentModel.swift in Sources */,
 				CEC5BAE02DF4C08E002B1D52 /* ActivityView.swift in Sources */,
