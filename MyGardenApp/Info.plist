@@ -13,5 +13,11 @@
 	</array>
 	<key>NSUserNotificationsUsageDescription</key>
 	<string>We&apos;ll send you important notifications</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This is necessary to identify your plants and diseases</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This is necessary to identify your plants and diseases</string>
+	<key>NSLocationUsageDescription</key>
+	<string>This is required to view the plants in your region</string>
 </dict>
 </plist>

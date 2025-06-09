@@ -52,6 +52,9 @@
 		CEC5BAED2DF5BD54002B1D52 /* MyGardenEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAEC2DF5BD54002B1D52 /* MyGardenEmptyView.swift */; };
 		CEC5BAF02DF5C375002B1D52 /* PlantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAEF2DF5C375002B1D52 /* PlantsViewModel.swift */; };
 		CEC5BAF52DF5C648002B1D52 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAF42DF5C648002B1D52 /* HistoryViewModel.swift */; };
+		CEC5BAF72DF6242A002B1D52 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAF62DF6242A002B1D52 /* CameraService.swift */; };
+		CEC5BAFA2DF62834002B1D52 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAF92DF62834002B1D52 /* CameraPreviewView.swift */; };
+		CEC5BAFD2DF66259002B1D52 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAFC2DF66259002B1D52 /* CameraViewModel.swift */; };
 		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
@@ -125,6 +128,9 @@
 		CEC5BAEC2DF5BD54002B1D52 /* MyGardenEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenEmptyView.swift; sourceTree = "<group>"; };
 		CEC5BAEF2DF5C375002B1D52 /* PlantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewModel.swift; sourceTree = "<group>"; };
 		CEC5BAF42DF5C648002B1D52 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		CEC5BAF62DF6242A002B1D52 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		CEC5BAF92DF62834002B1D52 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		CEC5BAFC2DF66259002B1D52 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -399,6 +405,8 @@
 		CEBA3F7E2DF1CE5B0021D1E5 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				CEC5BAFB2DF66245002B1D52 /* ViewModel */,
+				CEC5BAF82DF6280E002B1D52 /* Components */,
 				CEBA3F832DF1CF4E0021D1E5 /* CameraView.swift */,
 			);
 			path = Camera;
@@ -629,6 +637,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CEC5BAF82DF6280E002B1D52 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BAF92DF62834002B1D52 /* CameraPreviewView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEC5BAFB2DF66245002B1D52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BAFC2DF66259002B1D52 /* CameraViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CEDC6BB62DF3236900770BBA /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +668,7 @@
 				CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */,
 				CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */,
 				CEC5BAD42DF47041002B1D52 /* PaywallCoordinator.swift */,
+				CEC5BAF62DF6242A002B1D52 /* CameraService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -825,6 +850,7 @@
 				CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */,
 				CEBA3F522DF1A6F10021D1E5 /* AppRouterModel.swift in Sources */,
 				CEBA3F8F2DF1DED60021D1E5 /* HistoryView.swift in Sources */,
+				CEC5BAFD2DF66259002B1D52 /* CameraViewModel.swift in Sources */,
 				CEBA3F892DF1DC010021D1E5 /* Logger.swift in Sources */,
 				CEBA3F5C2DF1A7EE0021D1E5 /* RootViewModel.swift in Sources */,
 				CEBA3F762DF1C95D0021D1E5 /* BackgroundColor.swift in Sources */,
@@ -840,6 +866,8 @@
 				CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */,
 				CEC5BAD52DF47041002B1D52 /* PaywallCoordinator.swift in Sources */,
 				CEC5BAE22DF4CEF2002B1D52 /* SettingsAlert.swift in Sources */,
+				CEC5BAF72DF6242A002B1D52 /* CameraService.swift in Sources */,
+				CEC5BAFA2DF62834002B1D52 /* CameraPreviewView.swift in Sources */,
 				CEDC6BD12DF3BC1600770BBA /* OnboardingPaywallContentModel.swift in Sources */,
 				CEC5BAD32DF4675D002B1D52 /* OverlayPaywallViewModel.swift in Sources */,
 				CEC5BADA2DF4BC44002B1D52 /* NavigationBarWithTitle.swift in Sources */,
