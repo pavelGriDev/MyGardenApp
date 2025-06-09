@@ -16,7 +16,7 @@ struct MyGardenView: View {
             HistoryView()
                 .tag(MyGardenTab.history)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea(.all, edges: .bottom)
         .overlay(content: {
             NavigationBarWithTitle(title: "My Garden")
         })
