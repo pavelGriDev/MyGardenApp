@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct CameraView: View {
+    
+    @StateObject var vm = CameraViewModel()
+    
     var body: some View {
-        Text("Camera")
+        switch vm.userImage{
+        case .none:
+            CameraCaptureView(vm: vm)
+        case .some(let image):
+            EmptyView()
+        }
     }
 }
 
 #Preview {
     CameraView()
 }
+
+// CameraCaptureView и PhotoReviewView

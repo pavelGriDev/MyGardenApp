@@ -15,14 +15,11 @@ enum AppError: Error, LocalizedError {
     var errorDescription: String? {
         switch self {
         default:
-            "Unknown Error"
+            "Error"
         }
     }
     
     var recoverySuggestion: String? {
-        switch self {
-        default:
-            "Unknown error"
-        }
+        nil
     }
 }
