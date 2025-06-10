@@ -12,12 +12,15 @@ struct CameraView: View {
     @StateObject var vm = CameraViewModel()
     
     var body: some View {
-        switch vm.userImage {
-        case .none:
-            CameraCaptureView(vm: vm)
-        case .some(let image):
-            CameraPhotoReviewView(vm: vm, image: image)
+        Group {
+            switch vm.userImage {
+            case .none:
+                CameraCaptureView(vm: vm)
+            case .some(let image):
+                CameraPhotoReviewView(vm: vm, image: image)
+            }
         }
+        .onDisappear { vm.onDisappear() }
     }
 }
 

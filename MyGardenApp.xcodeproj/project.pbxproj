@@ -63,6 +63,12 @@
 		CEC5BB102DF761C5002B1D52 /* plantsProgress.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEC5BB0F2DF761C5002B1D52 /* plantsProgress.gif */; };
 		CEC5BB122DF76853002B1D52 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB112DF76853002B1D52 /* GifView.swift */; };
 		CEC5BB142DF76D3F002B1D52 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB132DF76D3F002B1D52 /* LoadingView.swift */; };
+		CEC5BB172DF76E18002B1D52 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB162DF76E18002B1D52 /* NetworkService.swift */; };
+		CEC5BB1A2DF78412002B1D52 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEC5BB192DF78412002B1D52 /* Alamofire */; };
+		CEC5BB1C2DF78FDC002B1D52 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB1B2DF78FDC002B1D52 /* String+ext.swift */; };
+		CEC5BB1E2DF7BF0C002B1D52 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB1D2DF7BF0C002B1D52 /* APIResponse.swift */; };
+		CEC5BB212DF84F4F002B1D52 /* IdentificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB202DF84F4F002B1D52 /* IdentificationResult.swift */; };
+		CEC5BB232DF84FD0002B1D52 /* HealthResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BB222DF84FD0002B1D52 /* HealthResult.swift */; };
 		CEDC6BB52DF31F5B00770BBA /* ActionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */; };
 		CEDC6BB82DF3239200770BBA /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */; };
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
@@ -147,6 +153,11 @@
 		CEC5BB0F2DF761C5002B1D52 /* plantsProgress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plantsProgress.gif; sourceTree = "<group>"; };
 		CEC5BB112DF76853002B1D52 /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
 		CEC5BB132DF76D3F002B1D52 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CEC5BB162DF76E18002B1D52 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CEC5BB1B2DF78FDC002B1D52 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
+		CEC5BB1D2DF7BF0C002B1D52 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		CEC5BB202DF84F4F002B1D52 /* IdentificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificationResult.swift; sourceTree = "<group>"; };
+		CEC5BB222DF84FD0002B1D52 /* HealthResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthResult.swift; sourceTree = "<group>"; };
 		CEDC6BB42DF31F5B00770BBA /* ActionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFooterView.swift; sourceTree = "<group>"; };
 		CEDC6BB72DF3239200770BBA /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -168,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBA3F4E2DF1A6350021D1E5 /* NavigationBackport in Frameworks */,
+				CEC5BB1A2DF78412002B1D52 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +217,7 @@
 				CE416A6C2DF230BF001364C5 /* Font+ext.swift */,
 				CEDC6BCD2DF39FA500770BBA /* View+ErrorAlert.swift */,
 				CEC5BAE32DF4CF96002B1D52 /* View+SettingsAlert.swift */,
+				CEC5BB1B2DF78FDC002B1D52 /* String+ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -693,6 +706,25 @@
 			path = Identification;
 			sourceTree = "<group>";
 		};
+		CEC5BB152DF76DFD002B1D52 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BB1F2DF84EF9002B1D52 /* Model */,
+				CEC5BB162DF76E18002B1D52 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CEC5BB1F2DF84EF9002B1D52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5BB1D2DF7BF0C002B1D52 /* APIResponse.swift */,
+				CEC5BB202DF84F4F002B1D52 /* IdentificationResult.swift */,
+				CEC5BB222DF84FD0002B1D52 /* HealthResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CEDC6BB62DF3236900770BBA /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -704,6 +736,7 @@
 		CEDC6BB92DF3285C00770BBA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CEC5BB152DF76DFD002B1D52 /* Network */,
 				CEDC6BBC2DF35EC900770BBA /* PurchaseService */,
 				CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */,
 				CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */,
@@ -772,6 +805,7 @@
 			name = MyGardenApp;
 			packageProductDependencies = (
 				CEBA3F4D2DF1A6350021D1E5 /* NavigationBackport */,
+				CEC5BB192DF78412002B1D52 /* Alamofire */,
 			);
 			productName = MyGardenApp;
 			productReference = CEC480C82DF0DCC2007F88A4 /* MyGardenApp.app */;
@@ -827,6 +861,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				CEBA3F4C2DF1A6350021D1E5 /* XCRemoteSwiftPackageReference "NavigationBackport" */,
+				CEC5BB182DF78412002B1D52 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CEC480C92DF0DCC2007F88A4 /* Products */;
@@ -868,6 +903,7 @@
 			files = (
 				CEDC6BCC2DF39E5900770BBA /* AppError.swift in Sources */,
 				CEC5BAC82DF45A1D002B1D52 /* DismissButtonView.swift in Sources */,
+				CEC5BB232DF84FD0002B1D52 /* HealthResult.swift in Sources */,
 				CEBA3F562DF1A77C0021D1E5 /* RootView.swift in Sources */,
 				CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */,
 				CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */,
@@ -876,6 +912,7 @@
 				CEDC6BD42DF3C03F00770BBA /* OnboardingPaywallViewModel.swift in Sources */,
 				CEC5BB142DF76D3F002B1D52 /* LoadingView.swift in Sources */,
 				CEBA3F732DF1C0F50021D1E5 /* MainTabBarView.swift in Sources */,
+				CEC5BB172DF76E18002B1D52 /* NetworkService.swift in Sources */,
 				CEC5BAEB2DF50B0A002B1D52 /* MyGardenTab.swift in Sources */,
 				CEBA3F6E2DF1BCB20021D1E5 /* OnboardingPaywallView.swift in Sources */,
 				CEC5BAFF2DF67606002B1D52 /* CameraCaptureView.swift in Sources */,
@@ -898,11 +935,13 @@
 				CEBA3F8F2DF1DED60021D1E5 /* HistoryView.swift in Sources */,
 				CEC5BAFD2DF66259002B1D52 /* CameraViewModel.swift in Sources */,
 				CEBA3F892DF1DC010021D1E5 /* Logger.swift in Sources */,
+				CEC5BB1C2DF78FDC002B1D52 /* String+ext.swift in Sources */,
 				CEBA3F5C2DF1A7EE0021D1E5 /* RootViewModel.swift in Sources */,
 				CEBA3F762DF1C95D0021D1E5 /* BackgroundColor.swift in Sources */,
 				CEC5BAE72DF50ACF002B1D52 /* MyGardenViewModel.swift in Sources */,
 				CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */,
 				CE416A642DF221B8001364C5 /* View+ext.swift in Sources */,
+				CEC5BB212DF84F4F002B1D52 /* IdentificationResult.swift in Sources */,
 				CEC5BB0E2DF761B4002B1D52 /* IdentificationView.swift in Sources */,
 				CEBA3F7C2DF1CE020021D1E5 /* TabModel.swift in Sources */,
 				CEBA3F862DF1CF630021D1E5 /* MyGardenView.swift in Sources */,
@@ -913,6 +952,7 @@
 				CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */,
 				CEC5BAD52DF47041002B1D52 /* PaywallCoordinator.swift in Sources */,
 				CEC5BAE22DF4CEF2002B1D52 /* SettingsAlert.swift in Sources */,
+				CEC5BB1E2DF7BF0C002B1D52 /* APIResponse.swift in Sources */,
 				CEC5BAF72DF6242A002B1D52 /* CameraService.swift in Sources */,
 				CEC5BAFA2DF62834002B1D52 /* CameraPreviewView.swift in Sources */,
 				CEDC6BD12DF3BC1600770BBA /* OnboardingPaywallContentModel.swift in Sources */,
@@ -1220,6 +1260,14 @@
 				minimumVersion = 0.11.3;
 			};
 		};
+		CEC5BB182DF78412002B1D52 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1227,6 +1275,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CEBA3F4C2DF1A6350021D1E5 /* XCRemoteSwiftPackageReference "NavigationBackport" */;
 			productName = NavigationBackport;
+		};
+		CEC5BB192DF78412002B1D52 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEC5BB182DF78412002B1D52 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

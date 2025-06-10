@@ -9,4 +9,5 @@ import Foundation
 
 enum AppRouterModel: Hashable {
     case paywall
+    case identification
 }

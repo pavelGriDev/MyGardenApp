@@ -17,6 +17,7 @@ struct GifView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> WKWebView {
         let webView = WKWebView()
+        webView.backgroundColor = UIColor.backgroundLevel1
         // force unwrap это осознанный выбор, потому что если локального ресурса нет апка должна упасть.
         let url = Bundle.main.url(forResource: name, withExtension: "gif")!
         let data = try! Data(contentsOf: url)

@@ -46,6 +46,10 @@ final class CameraViewModel: ObservableObject {
         cameraService.controllSession(start: false)
     }
     
+    func onDisappear() {
+        userImage = nil
+    }
+    
     func takePhoto() {
         cameraService.takePhoto(withFlash: flashToggle)
     }
@@ -62,8 +66,8 @@ final class CameraViewModel: ObservableObject {
         userImage = nil
     }
     
-    func identificationButtonPressed() {
-        
+    func identificationButtonPressed(completion: () -> Void) {
+        completion()
     }
     
     func diagnosticsButtonPressed() {
