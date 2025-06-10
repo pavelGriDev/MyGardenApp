@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import NavigationBackport
 
 struct CameraPhotoReviewView: View {
+    @EnvironmentObject var navigator: PathNavigator
     @ObservedObject var vm: CameraViewModel
+    
     let image: UIImage
     
     var body: some View {
@@ -45,7 +48,7 @@ struct CameraPhotoReviewView: View {
                 HStack(spacing: 8) {
                     CommonButton(
                         title: "Identification",
-                        action: vm.identificationButtonPressed
+                        action: identificationAction
                     )
                     CommonButton(
                         title: "Diagnostics",
@@ -57,6 +60,12 @@ struct CameraPhotoReviewView: View {
                 
             }
             .padding(.horizontal, 16)
+        }
+    }
+    
+    private func identificationAction() {
+        vm.identificationButtonPressed() {
+            navigator.push(AppRouterModel.identification)
         }
     }
 }

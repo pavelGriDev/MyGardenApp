@@ -29,6 +29,8 @@ struct RootView: View {
                 switch screen {
                 case .paywall:
                     OnboardingPaywallView(vm.finishOnboardingFromPaywall)
+                case .identification:
+                    IdentificationView()
                 }
             }
         }
