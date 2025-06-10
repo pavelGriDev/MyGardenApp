@@ -18,7 +18,6 @@
 		CEBA3F562DF1A77C0021D1E5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F552DF1A77C0021D1E5 /* RootView.swift */; };
 		CEBA3F592DF1A7B10021D1E5 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F582DF1A7B10021D1E5 /* StartScreen.swift */; };
 		CEBA3F5C2DF1A7EE0021D1E5 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F5B2DF1A7EE0021D1E5 /* RootViewModel.swift */; };
-		CEBA3F622DF1A88A0021D1E5 /* RootViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F612DF1A88A0021D1E5 /* RootViewModelTest.swift */; };
 		CEBA3F642DF1AB4D0021D1E5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBA3F632DF1AB4D0021D1E5 /* Launch Screen.storyboard */; };
 		CEBA3F672DF1B0780021D1E5 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F662DF1B0780021D1E5 /* LaunchView.swift */; };
 		CEBA3F6B2DF1BC460021D1E5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */; };
@@ -35,7 +34,6 @@
 		CEBA3F8F2DF1DED60021D1E5 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA3F8E2DF1DED60021D1E5 /* HistoryView.swift */; };
 		CEC480F72DF0DCCD007F88A4 /* MyGardenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */; };
 		CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */; };
-		CEC480FB2DF0DD2A007F88A4 /* MyGardenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */; };
 		CEC5BAC82DF45A1D002B1D52 /* DismissButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAC72DF45A1D002B1D52 /* DismissButtonView.swift */; };
 		CEC5BACF2DF46677002B1D52 /* OverlayPaywallContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BACE2DF46677002B1D52 /* OverlayPaywallContentModel.swift */; };
 		CEC5BAD12DF46748002B1D52 /* OverlayPaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5BAD02DF46748002B1D52 /* OverlayPaywallView.swift */; };
@@ -74,8 +72,6 @@
 		CEDC6BBB2DF3287C00770BBA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */; };
 		CEDC6BBE2DF35F0600770BBA /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBD2DF35F0600770BBA /* PurchaseService.swift */; };
 		CEDC6BC02DF3634900770BBA /* MockPurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BBF2DF3634900770BBA /* MockPurchaseModel.swift */; };
-		CEDC6BC42DF3698000770BBA /* OnboardingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC32DF3698000770BBA /* OnboardingViewModelTest.swift */; };
-		CEDC6BC62DF378DE00770BBA /* MockPurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */; };
 		CEDC6BC82DF37AA800770BBA /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC72DF37AA800770BBA /* ProgressButton.swift */; };
 		CEDC6BCA2DF382A300770BBA /* AppInteractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */; };
 		CEDC6BCC2DF39E5900770BBA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BCB2DF39E5900770BBA /* AppError.swift */; };
@@ -83,16 +79,6 @@
 		CEDC6BD12DF3BC1600770BBA /* OnboardingPaywallContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BD02DF3BC1600770BBA /* OnboardingPaywallContentModel.swift */; };
 		CEDC6BD42DF3C03F00770BBA /* OnboardingPaywallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6BD32DF3C03F00770BBA /* OnboardingPaywallViewModel.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CEC480D62DF0DCC5007F88A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEC480C02DF0DCC2007F88A4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEC480C72DF0DCC2007F88A4;
-			remoteInfo = MyGardenApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CE416A632DF221B8001364C5 /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
@@ -106,7 +92,6 @@
 		CEBA3F552DF1A77C0021D1E5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CEBA3F582DF1A7B10021D1E5 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
 		CEBA3F5B2DF1A7EE0021D1E5 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
-		CEBA3F612DF1A88A0021D1E5 /* RootViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelTest.swift; sourceTree = "<group>"; };
 		CEBA3F632DF1AB4D0021D1E5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CEBA3F662DF1B0780021D1E5 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		CEBA3F6A2DF1BC460021D1E5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -122,10 +107,8 @@
 		CEBA3F8C2DF1DEC70021D1E5 /* PlantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsView.swift; sourceTree = "<group>"; };
 		CEBA3F8E2DF1DED60021D1E5 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		CEC480C82DF0DCC2007F88A4 /* MyGardenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGardenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC480D52DF0DCC5007F88A4 /* MyGardenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGardenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC480F42DF0DCCD007F88A4 /* MyGardenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenAppApp.swift; sourceTree = "<group>"; };
-		CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenAppTests.swift; sourceTree = "<group>"; };
 		CEC5BAC72DF45A1D002B1D52 /* DismissButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonView.swift; sourceTree = "<group>"; };
 		CEC5BACE2DF46677002B1D52 /* OverlayPaywallContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPaywallContentModel.swift; sourceTree = "<group>"; };
 		CEC5BAD02DF46748002B1D52 /* OverlayPaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPaywallView.swift; sourceTree = "<group>"; };
@@ -163,8 +146,6 @@
 		CEDC6BBA2DF3287C00770BBA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		CEDC6BBD2DF35F0600770BBA /* PurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
 		CEDC6BBF2DF3634900770BBA /* MockPurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPurchaseModel.swift; sourceTree = "<group>"; };
-		CEDC6BC32DF3698000770BBA /* OnboardingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTest.swift; sourceTree = "<group>"; };
-		CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPurchaseService.swift; sourceTree = "<group>"; };
 		CEDC6BC72DF37AA800770BBA /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
 		CEDC6BC92DF382A300770BBA /* AppInteractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractionService.swift; sourceTree = "<group>"; };
 		CEDC6BCB2DF39E5900770BBA /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -180,13 +161,6 @@
 			files = (
 				CEBA3F4E2DF1A6350021D1E5 /* NavigationBackport in Frameworks */,
 				CEC5BB1A2DF78412002B1D52 /* Alamofire in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEC480D22DF0DCC5007F88A4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,39 +276,6 @@
 			isa = PBXGroup;
 			children = (
 				CEBA3F5B2DF1A7EE0021D1E5 /* RootViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		CEBA3F5D2DF1A84C0021D1E5 /* Screen */ = {
-			isa = PBXGroup;
-			children = (
-				CEBA3F5E2DF1A8540021D1E5 /* Root */,
-				CEDC6BC12DF3693D00770BBA /* Onboarding */,
-			);
-			path = Screen;
-			sourceTree = "<group>";
-		};
-		CEBA3F5E2DF1A8540021D1E5 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				CEBA3F602DF1A8680021D1E5 /* ViewModel */,
-			);
-			path = Root;
-			sourceTree = "<group>";
-		};
-		CEBA3F5F2DF1A85F0021D1E5 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC6BC52DF378DE00770BBA /* MockPurchaseService.swift */,
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
-		CEBA3F602DF1A8680021D1E5 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CEBA3F612DF1A88A0021D1E5 /* RootViewModelTest.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -506,7 +447,6 @@
 			isa = PBXGroup;
 			children = (
 				CEC480F52DF0DCCD007F88A4 /* MyGardenApp */,
-				CEC480FA2DF0DD29007F88A4 /* MyGardenAppTests */,
 				CEC480C92DF0DCC2007F88A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -515,7 +455,6 @@
 			isa = PBXGroup;
 			children = (
 				CEC480C82DF0DCC2007F88A4 /* MyGardenApp.app */,
-				CEC480D52DF0DCC5007F88A4 /* MyGardenAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -536,16 +475,6 @@
 				CEC480F22DF0DCCD007F88A4 /* Assets.xcassets */,
 			);
 			path = MyGardenApp;
-			sourceTree = "<group>";
-		};
-		CEC480FA2DF0DD29007F88A4 /* MyGardenAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				CEBA3F5F2DF1A85F0021D1E5 /* Mock */,
-				CEC480F92DF0DD29007F88A4 /* MyGardenAppTests.swift */,
-				CEBA3F5D2DF1A84C0021D1E5 /* Screen */,
-			);
-			path = MyGardenAppTests;
 			sourceTree = "<group>";
 		};
 		CEC5BAC92DF463EA002B1D52 /* Onboarding */ = {
@@ -755,22 +684,6 @@
 			path = PurchaseService;
 			sourceTree = "<group>";
 		};
-		CEDC6BC12DF3693D00770BBA /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC6BC22DF3694C00770BBA /* ViewModel */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		CEDC6BC22DF3694C00770BBA /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC6BC32DF3698000770BBA /* OnboardingViewModelTest.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CEDC6BCF2DF3BC0200770BBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -811,26 +724,6 @@
 			productReference = CEC480C82DF0DCC2007F88A4 /* MyGardenApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CEC480D42DF0DCC5007F88A4 /* MyGardenAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEC480EC2DF0DCC5007F88A4 /* Build configuration list for PBXNativeTarget "MyGardenAppTests" */;
-			buildPhases = (
-				CEC480D12DF0DCC5007F88A4 /* Sources */,
-				CEC480D22DF0DCC5007F88A4 /* Frameworks */,
-				CEC480D32DF0DCC5007F88A4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CEC480D72DF0DCC5007F88A4 /* PBXTargetDependency */,
-			);
-			name = MyGardenAppTests;
-			packageProductDependencies = (
-			);
-			productName = MyGardenAppTests;
-			productReference = CEC480D52DF0DCC5007F88A4 /* MyGardenAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -843,10 +736,6 @@
 				TargetAttributes = {
 					CEC480C72DF0DCC2007F88A4 = {
 						CreatedOnToolsVersion = 16.3;
-					};
-					CEC480D42DF0DCC5007F88A4 = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = CEC480C72DF0DCC2007F88A4;
 					};
 				};
 			};
@@ -869,7 +758,6 @@
 			projectRoot = "";
 			targets = (
 				CEC480C72DF0DCC2007F88A4 /* MyGardenApp */,
-				CEC480D42DF0DCC5007F88A4 /* MyGardenAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -884,13 +772,6 @@
 				CEC480F82DF0DCCD007F88A4 /* Assets.xcassets in Resources */,
 				CE416A702DF2313E001364C5 /* Onest-SemiBold.ttf in Resources */,
 				CEC5BB102DF761C5002B1D52 /* plantsProgress.gif in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEC480D32DF0DCC5007F88A4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -968,26 +849,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEC480D12DF0DCC5007F88A4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEDC6BC42DF3698000770BBA /* OnboardingViewModelTest.swift in Sources */,
-				CEBA3F622DF1A88A0021D1E5 /* RootViewModelTest.swift in Sources */,
-				CEDC6BC62DF378DE00770BBA /* MockPurchaseService.swift in Sources */,
-				CEC480FB2DF0DD2A007F88A4 /* MyGardenAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CEC480D72DF0DCC5007F88A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEC480C72DF0DCC2007F88A4 /* MyGardenApp */;
-			targetProxy = CEC480D62DF0DCC5007F88A4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CEC480E72DF0DCC5007F88A4 /* Debug */ = {
@@ -1181,44 +1043,6 @@
 			};
 			name = Release;
 		};
-		CEC480ED2DF0DCC5007F88A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q5L7D25SC3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pavel.MyGardenAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGardenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyGardenApp";
-			};
-			name = Debug;
-		};
-		CEC480EE2DF0DCC5007F88A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q5L7D25SC3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pavel.MyGardenAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGardenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyGardenApp";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1236,15 +1060,6 @@
 			buildConfigurations = (
 				CEC480EA2DF0DCC5007F88A4 /* Debug */,
 				CEC480EB2DF0DCC5007F88A4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEC480EC2DF0DCC5007F88A4 /* Build configuration list for PBXNativeTarget "MyGardenAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEC480ED2DF0DCC5007F88A4 /* Debug */,
-				CEC480EE2DF0DCC5007F88A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
