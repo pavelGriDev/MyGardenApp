@@ -21,7 +21,9 @@ final class CameraViewModel: ObservableObject {
         self.cameraService = cameraService
         
         self.cameraService.captureErrorCompletion = { [weak self] error in
-            self?.appError = error
+            DispatchQueue.main.async {
+                self?.appError = error
+            }
         }
         
         self.cameraService.imageCaptureCompletion = { [weak self] imageData in

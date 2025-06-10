@@ -32,10 +32,8 @@ final class MainViewModel: ObservableObject {
             requestCameraPermission()
             return false
         case .authorized:
-            Logger.printInfo("Open the camera")
             return true
         default:
-            Logger.printInfo("Show the alert")
             return false
         }
     }
@@ -43,7 +41,6 @@ final class MainViewModel: ObservableObject {
     func requestCameraPermission() {
         Task {
             if await AVCaptureDevice.requestAccess(for: .video) {
-                Logger.printInfo("Open the camera")
                 await MainActor.run {
                     currentTab = .camera
                 }
